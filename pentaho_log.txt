@@ -2,7 +2,7 @@ DEBUG: Using JAVA_HOME
 DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
 DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
 
-E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"jb_COEP_HES" /dir:BU/ZBB-HES/ /user:admin /pass:admin /level:Basic 
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"jb_COEP_HES" /dir:BU/ZBB-HES/ /level:Basic 
 2023/10/30 12:00:03 - Kitchen - Logging is at level : Basic logging
 2023/10/30 12:00:03 - Kitchen - Start of run.
 2023/10/30 12:00:03 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
