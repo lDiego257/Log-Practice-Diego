@@ -1,0 +1,220 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"Bis_CAC_JB_Costo" /dir:BIS/Costo/ /user:admin /pass:admin /level:Basic 
+2024/02/29 04:30:02 - Kitchen - Logging is at level : Basic logging
+2024/02/29 04:30:02 - Kitchen - Start of run.
+2024/02/29 04:30:02 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/29 04:30:04 - Bis_CAC_JB_Costo - Start of job execution
+2024/02/29 04:30:04 - Bis_CAC_JB_Costo - Starting entry [Truncate Table Process ]
+2024/02/29 04:30:04 - Bis_CAC_JB_Costo - Starting entry [Insertar Fechas Procesar]
+2024/02/29 04:30:08 - Bis_CAC_JB_Costo - Starting entry [Actualizar Corrida Counter ]
+2024/02/29 04:30:08 - Bis_CAC_JB_Costo - Starting entry [Validacion Proceso Dependientes True]
+2024/02/29 04:30:08 - Bis_CAC_JB_Costo - Starting entry [Costo Ptoduccion]
+2024/02/29 04:30:08 - Costo Ptoduccion - Loading transformation from repository [Costo Ptoduccion] in directory [/BIS/Costo]
+2024/02/29 04:30:09 - Costo Ptoduccion - Dispatching started for transformation [Costo Ptoduccion]
+2024/02/29 04:30:09 - Insertar CKMLHD.0 - Connected to database [BI02_BisSTG_SAP] (commit=0)
+2024/02/29 04:30:09 - Insertar CKMLCR .0 - Connected to database [BI02_BisSTG_SAP] (commit=1000)
+2024/02/29 04:30:10 - TABLA CKMLHD.0 - Finished reading query, closing connection.
+2024/02/29 04:30:10 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2024/02/29 04:30:10 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/29 04:30:10 - TABLA CKMLHD.0 - Finished processing (I=7, O=0, R=0, W=7, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLCR
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BDATJ
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: POPER
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: PEINH
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: CURTP
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: PVPRS
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: SALK3
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: WAERS
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: STPRS
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BDATJ = '2024' AND POPER  = '2'  
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLHD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MLAST
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: XABRECH
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: ABRECHDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XABRERR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: ABRECHUHR
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BWKEY
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: BWTAR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: KZBWS
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: XOBEW
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: VBELN
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: POSNR
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: PSPNR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: LIFNR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BWKEY = '1101'
+2024/02/29 04:30:10 - TABLA CKMLCR.0 - Finished reading query, closing connection.
+2024/02/29 04:30:10 - TABLA CKMLCR.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLHD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MLAST
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: XABRECH
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: ABRECHDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XABRERR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: ABRECHUHR
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BWKEY
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: BWTAR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: KZBWS
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: XOBEW
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: VBELN
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: POSNR
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: PSPNR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: LIFNR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BWKEY = '1400'
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLHD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MLAST
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: XABRECH
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: ABRECHDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XABRERR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: ABRECHUHR
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BWKEY
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: BWTAR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: KZBWS
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: XOBEW
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: VBELN
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: POSNR
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: PSPNR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: LIFNR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BWKEY = 'BB26'
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLHD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MLAST
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: XABRECH
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: ABRECHDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XABRERR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: ABRECHUHR
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BWKEY
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: BWTAR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: KZBWS
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: XOBEW
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: VBELN
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: POSNR
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: PSPNR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: LIFNR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BWKEY = 'BB23'
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLHD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MLAST
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: XABRECH
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: ABRECHDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XABRERR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: ABRECHUHR
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BWKEY
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: BWTAR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: KZBWS
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: XOBEW
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: VBELN
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: POSNR
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: PSPNR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: LIFNR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BWKEY = 'BB24'
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLHD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MLAST
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: XABRECH
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: ABRECHDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XABRERR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: ABRECHUHR
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BWKEY
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: BWTAR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: KZBWS
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: XOBEW
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: VBELN
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: POSNR
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: PSPNR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: LIFNR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BWKEY = 'VC31'
+2024/02/29 04:30:18 - Split Fields 2 3.0 - linenr 50000
+2024/02/29 04:30:19 - Insertar CKMLHD.0 - linenr 50000
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLHD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MLAST
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: XABRECH
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: ABRECHDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XABRERR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: ABRECHUHR
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BWKEY
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: BWTAR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: KZBWS
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: XOBEW
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: VBELN
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: POSNR
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: PSPNR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: LIFNR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BWKEY = 'DM33'
+2024/02/29 04:30:19 - LEER TABLA SAP 2 3.0 - Finished processing (I=0, O=0, R=7, W=70384, U=0, E=0)
+2024/02/29 04:30:21 - Split Fields 2 3.0 - Finished processing (I=0, O=0, R=70384, W=70384, U=0, E=0)
+2024/02/29 04:30:22 - Insertar CKMLHD.0 - Finished processing (I=0, O=70384, R=70384, W=70384, U=0, E=0)
+2024/02/29 04:39:04 - Split Fields 2 2.0 - linenr 50000
+2024/02/29 04:39:04 - Insertar CKMLCR .0 - linenr 50000
+2024/02/29 04:39:06 - Split Fields 2 2.0 - linenr 100000
+2024/02/29 04:39:06 - LEER TABLA SAP 2.0 - Finished processing (I=0, O=0, R=1, W=113416, U=0, E=0)
+2024/02/29 04:39:06 - Insertar CKMLCR .0 - linenr 100000
+2024/02/29 04:39:06 - Split Fields 2 2.0 - Finished processing (I=0, O=0, R=113416, W=113416, U=0, E=0)
+2024/02/29 04:39:07 - Insertar CKMLCR .0 - Finished processing (I=0, O=113416, R=113416, W=113416, U=0, E=0)
+2024/02/29 04:39:07 - Bis_CAC_JB_Costo - Starting entry [Sp_UpdateCostProductionMonth]
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Starting entry [Insertar LOG Completado]
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Starting entry [Success]
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Finished job entry [Success] (result=[true])
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Finished job entry [Insertar LOG Completado] (result=[true])
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Finished job entry [Sp_UpdateCostProductionMonth] (result=[true])
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Finished job entry [Costo Ptoduccion] (result=[true])
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Finished job entry [Validacion Proceso Dependientes True] (result=[true])
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Finished job entry [Actualizar Corrida Counter ] (result=[true])
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Finished job entry [Insertar Fechas Procesar] (result=[true])
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Finished job entry [Truncate Table Process ] (result=[true])
+2024/02/29 04:39:12 - Bis_CAC_JB_Costo - Job execution finished
+2024/02/29 04:39:12 - Kitchen - Finished!
+2024/02/29 04:39:12 - Kitchen - Start=2024/02/29 04:30:02.288, Stop=2024/02/29 04:39:12.138
+2024/02/29 04:39:12 - Kitchen - Processing ended after 9 minutes and 9 seconds (549 seconds total).

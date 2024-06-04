@@ -1,0 +1,107 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"Bis_CAC_JB_Product" /dir:BIS/Product/ /user:admin /pass:admin /level:Basic 
+2024/02/29 04:00:02 - Kitchen - Logging is at level : Basic logging
+2024/02/29 04:00:02 - Kitchen - Start of run.
+2024/02/29 04:00:02 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/29 04:00:05 - Bis_CAC_JB_Product - Start of job execution
+2024/02/29 04:00:05 - Bis_CAC_JB_Product - Starting entry [Insertar Fechas Procesar]
+2024/02/29 04:00:06 - Bis_CAC_JB_Product - Starting entry [Actualizar Corrida Counter]
+2024/02/29 04:00:06 - Bis_CAC_JB_Product - Starting entry [Validacion Proceso Dependientes True]
+2024/02/29 04:00:06 - Bis_CAC_JB_Product - Starting entry [TVFKT]
+2024/02/29 04:00:06 - TVFKT - Loading transformation from repository [TVFKT] in directory [/BIS/Product]
+2024/02/29 04:00:07 - TVFKT - Dispatching started for transformation [TVFKT]
+2024/02/29 04:00:07 - Table output.0 - Connected to database [BI02_BisSTG_SAP] (commit=1000)
+2024/02/29 04:00:08 - TVFKT.0 - Finished reading query, closing connection.
+2024/02/29 04:00:08 - TVFKT.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: TVFKT
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: SPRAS
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: FKART
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: VTEXT
+2024/02/29 04:00:08 - RFC_READ_TABLE 4.0 - Finished processing (I=0, O=0, R=1, W=391, U=0, E=0)
+2024/02/29 04:00:08 - Split Fields 3 2.0 - Finished processing (I=0, O=0, R=391, W=391, U=0, E=0)
+2024/02/29 04:00:08 - Table output.0 - Finished processing (I=0, O=391, R=391, W=391, U=0, E=0)
+2024/02/29 04:00:08 - Bis_CAC_JB_Product - Starting entry [T685T]
+2024/02/29 04:00:08 - T685T - Loading transformation from repository [T685T] in directory [/BIS/Product]
+2024/02/29 04:00:09 - T685T - Dispatching started for transformation [T685T]
+2024/02/29 04:00:09 - Table output.0 - Connected to database [BI02_BisSTG_SAP] (commit=1000)
+2024/02/29 04:00:09 - T685T.0 - Finished reading query, closing connection.
+2024/02/29 04:00:09 - T685T.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: T685T
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: SPRAS
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: KVEWE
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: KAPPL
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: KSCHL
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: VTEXT
+2024/02/29 04:00:09 - RFC_READ_TABLE 4.0 - Finished processing (I=0, O=0, R=1, W=5391, U=0, E=0)
+2024/02/29 04:00:10 - Split Fields 3 2.0 - Finished processing (I=0, O=0, R=5391, W=5391, U=0, E=0)
+2024/02/29 04:00:10 - Table output.0 - Finished processing (I=0, O=5391, R=5391, W=5391, U=0, E=0)
+2024/02/29 04:00:10 - Bis_CAC_JB_Product - Starting entry [MARA]
+2024/02/29 04:00:10 - MARA - Loading transformation from repository [MARA] in directory [/BIS/Product]
+2024/02/29 04:00:11 - MARA - Dispatching started for transformation [MARA]
+2024/02/29 04:00:11 - Insertar datos BIS MARA.0 - Connected to database [BI02_BisSTG_SAP] (commit=1000)
+2024/02/29 04:00:11 - MARA.0 - Finished reading query, closing connection.
+2024/02/29 04:00:11 - MARA.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: MARA
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: ERSDA
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: ERNAM
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: LAEDA
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: AENAM
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: VPSTA
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: PSTAT
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: LVORM
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: MTART
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: MBRSH
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: MATKL
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: BISMT
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: MEINS
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: BSTME
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: ZEINR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: ZEIAR
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: ZEIVR
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: ZEIFO
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: AESZN
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: BLATT
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: BLANZ
+Table: FIELDS, Name: FIELDNAME, Row: 22, Value: LABOR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: 
+2024/02/29 04:01:09 - Split a campos MARM 2.0 - linenr 50000
+2024/02/29 04:01:10 - Insertar datos BIS MARA.0 - linenr 50000
+2024/02/29 04:01:12 - Split a campos MARM 2.0 - linenr 100000
+2024/02/29 04:01:12 - Insertar datos BIS MARA.0 - linenr 100000
+2024/02/29 04:01:14 - Split a campos MARM 2.0 - linenr 150000
+2024/02/29 04:01:14 - Insertar datos BIS MARA.0 - linenr 150000
+2024/02/29 04:01:16 - MARM FROM SAP  2.0 - Finished processing (I=0, O=0, R=1, W=200689, U=0, E=0)
+2024/02/29 04:01:16 - Split a campos MARM 2.0 - linenr 200000
+2024/02/29 04:01:16 - Split a campos MARM 2.0 - Finished processing (I=0, O=0, R=200689, W=200689, U=0, E=0)
+2024/02/29 04:01:17 - Insertar datos BIS MARA.0 - linenr 200000
+2024/02/29 04:01:17 - Insertar datos BIS MARA.0 - Finished processing (I=0, O=200689, R=200689, W=200689, U=0, E=0)
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Starting entry [Insertar LOG Completado Correctamente]
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Starting entry [Mail]
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Finished job entry [Mail] (result=[false])
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Finished job entry [Insertar LOG Completado Correctamente] (result=[false])
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Finished job entry [MARA] (result=[false])
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Finished job entry [T685T] (result=[false])
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Finished job entry [TVFKT] (result=[false])
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Finished job entry [Validacion Proceso Dependientes True] (result=[false])
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Finished job entry [Actualizar Corrida Counter] (result=[false])
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Finished job entry [Insertar Fechas Procesar] (result=[false])
+2024/02/29 04:01:17 - Bis_CAC_JB_Product - Job execution finished
+2024/02/29 04:01:17 - Kitchen - Finished!
+2024/02/29 04:01:17 - Kitchen - Start=2024/02/29 04:00:02.577, Stop=2024/02/29 04:01:17.135
+2024/02/29 04:01:17 - Kitchen - Processing ended after 1 minutes and 14 seconds (74 seconds total).

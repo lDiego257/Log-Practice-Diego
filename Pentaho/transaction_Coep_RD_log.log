@@ -1,0 +1,18 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"Carga COEP RD2" /dir:BU/CoepRD/ /user:admin /pass:admin /level:Basic 
+2024/02/14 00:00:02 - Kitchen - Logging is at level : Basic logging
+2024/02/14 00:00:02 - Kitchen - Start of run.
+2024/02/14 00:00:02 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/14 00:00:06 - Carga COEP RD - Start of job execution
+2024/02/14 00:00:06 - Carga COEP RD - Starting entry [Set variables]
+2024/02/14 00:00:06 - Carga COEP RD - Starting entry [Actualizar datos ejecucion Proceso]
+2024/02/14 00:00:06 - Carga COEP RD - Finished job entry [Actualizar datos ejecucion Proceso] (result=[false])
+2024/02/14 00:00:06 - Carga COEP RD - Finished job entry [Set variables] (result=[false])
+2024/02/14 00:00:06 - Carga COEP RD - Job execution finished
+2024/02/14 00:00:06 - Kitchen - Finished!
+2024/02/14 00:00:06 - Kitchen - Start=2024/02/14 00:00:02.621, Stop=2024/02/14 00:00:06.402
+2024/02/14 00:00:06 - Kitchen - Processing ended after 3 seconds.
+

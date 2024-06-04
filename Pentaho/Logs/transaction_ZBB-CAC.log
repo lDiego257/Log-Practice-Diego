@@ -1,0 +1,231 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"jb_GeneralDataZ" /dir:BU/ZBB-CAC/ /user:admin /pass:admin /level:Basic 
+2024/02/29 12:00:06 - Kitchen - Logging is at level : Basic logging
+2024/02/29 12:00:06 - Kitchen - Start of run.
+2024/02/29 12:00:06 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/29 12:00:11 - jb_GeneralDataZ - Start of job execution
+2024/02/29 12:00:11 - jb_GeneralDataZ - Starting entry [Set variables]
+2024/02/29 12:00:11 - jb_GeneralDataZ - Starting entry [UpdateFechaCorrida]
+2024/02/29 12:00:11 - jb_GeneralDataZ - Starting entry [Variables]
+2024/02/29 12:00:11 - Variables - Loading transformation from repository [Variables] in directory [/BU/ZBB-CAC]
+2024/02/29 12:00:12 - Variables - Dispatching started for transformation [Variables]
+2024/02/29 12:00:12 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 12:00:12 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2024/02/29 12:00:12 - Set Variables.0 - Setting environment variables...
+2024/02/29 12:00:12 - Set Variables.0 - Set variable FechaDesde to value [20240201]
+2024/02/29 12:00:12 - Set Variables.0 - Set variable FechaHasta to value [20240229]
+2024/02/29 12:00:12 - Set Variables.0 - Set variable LogsID to value [7646]
+2024/02/29 12:00:12 - Write to log.0 - 
+2024/02/29 12:00:12 - Write to log.0 - ------------> Linenr 1------------------------------
+2024/02/29 12:00:12 - Write to log.0 - Executado FechaDesde
+2024/02/29 12:00:12 - Write to log.0 - 
+2024/02/29 12:00:12 - Write to log.0 - FechaDesde = 20240201
+2024/02/29 12:00:12 - Write to log.0 - FechaHasta = 20240229
+2024/02/29 12:00:12 - Write to log.0 - 
+2024/02/29 12:00:12 - Write to log.0 - ====================
+2024/02/29 12:00:12 - Set Variables.0 - Finished after 1 rows.
+2024/02/29 12:00:12 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 12:00:12 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/29 12:00:12 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 12:00:12 - jb_GeneralDataZ - Starting entry [ZGSLPMI01T HEADER]
+2024/02/29 12:00:12 - ZGSLPMI01T HEADER - Loading transformation from repository [ZGSLPMI01T HEADER] in directory [/BU/ZBB-CAC]
+2024/02/29 12:00:14 - ZGSLPMI01T HEADER - Dispatching started for transformation [ZGSLPMI01T HEADER]
+2024/02/29 12:00:14 - Insertar ZGSLPMI01T.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2024/02/29 12:00:15 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2024/02/29 12:00:15 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/29 12:00:15 - TABLA ZGSLPMI01T.0 - Finished reading query, closing connection.
+2024/02/29 12:00:15 - TABLA ZGSLPMI01T.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: ZGSLPMI01T
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: RCLNT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: RLDNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: RYEAR
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: ROBJNR
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: RTCUR
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: RUNIT
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: RBUKRS
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: RACCT
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: RBUSA
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: RCNTR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: RZZRMVCT
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: RZZKOKRS
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: RZZBRAND
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: RZZICA
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: RZZPRDCAT
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: TSL02
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: SBUKRS
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: SACCT
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: SBUSA
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: SCNTR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: RYEAR = '2024' 
+2024/02/29 12:00:20 - LEER ZGSLPMI01T.0 - Finished processing (I=0, O=0, R=1, W=18774, U=0, E=0)
+2024/02/29 12:00:20 - Obtener campos ZGSLPMI01T.0 - Finished processing (I=0, O=0, R=18774, W=18774, U=0, E=0)
+2024/02/29 12:00:20 - Insertar ZGSLPMI01T.0 - Finished processing (I=0, O=18774, R=18774, W=18774, U=0, E=0)
+2024/02/29 12:00:20 - jb_GeneralDataZ - Starting entry [ZGSLPMI01T Detalle]
+2024/02/29 12:00:20 - ZGSLPMI01T Detalle - Loading transformation from repository [ZGSLPMI01T Detalle] in directory [/BU/ZBB-CAC]
+2024/02/29 12:00:22 - ZGSLPMI01T Detalle - Dispatching started for transformation [ZGSLPMI01T Detalle]
+2024/02/29 12:00:22 - Insertar ZGSLPMI01A.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2024/02/29 12:00:22 - TABLA ZGSLPMI01A (DETALLE) 2.0 - Finished reading query, closing connection.
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: ZGSLPMI01A
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: RCLNT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: GL_SIRID
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: RLDNR
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: RYEAR
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: RTCUR
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: RUNIT
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: POPER
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: DOCCT
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: DOCNR
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: RBUKRS
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: RACCT
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: RBUSA
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: RCNTR
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: RZZRMVCT
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: RZZKOKRS
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: RZZBRAND
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: TSL
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: MSL
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: SGTXT
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: DOCTY
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: RZZICA
+2024/02/29 12:00:22 - TABLA ZGSLPMI01A (DETALLE) 2.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Table: FIELDS, Name: FIELDNAME, Row: 22, Value: HSL
+Table: FIELDS, Name: FIELDNAME, Row: 23, Value: USNAM
+Table: OPTIONS, Name: TEXT, Row: 0, Value:  RYEAR = '2024'  AND POPER = '2'
+2024/02/29 12:05:55 - Obtener campos ZGSLPMI01T 2.0 - linenr 50000
+2024/02/29 12:05:56 - Insertar ZGSLPMI01A.0 - linenr 50000
+2024/02/29 12:05:57 - Obtener campos ZGSLPMI01T 2.0 - linenr 100000
+2024/02/29 12:05:57 - Insertar ZGSLPMI01A.0 - linenr 100000
+2024/02/29 12:05:59 - Obtener campos ZGSLPMI01T 2.0 - linenr 150000
+2024/02/29 12:05:59 - Insertar ZGSLPMI01A.0 - linenr 150000
+2024/02/29 12:06:00 - Obtener campos ZGSLPMI01T 2.0 - linenr 200000
+2024/02/29 12:06:01 - Insertar ZGSLPMI01A.0 - linenr 200000
+2024/02/29 12:06:02 - Obtener campos ZGSLPMI01T 2.0 - linenr 250000
+2024/02/29 12:06:02 - Insertar ZGSLPMI01A.0 - linenr 250000
+2024/02/29 12:06:04 - Obtener campos ZGSLPMI01T 2.0 - linenr 300000
+2024/02/29 12:06:04 - Insertar ZGSLPMI01A.0 - linenr 300000
+2024/02/29 12:06:05 - Obtener campos ZGSLPMI01T 2.0 - linenr 350000
+2024/02/29 12:06:06 - Insertar ZGSLPMI01A.0 - linenr 350000
+2024/02/29 12:06:07 - Obtener campos ZGSLPMI01T 2.0 - linenr 400000
+2024/02/29 12:06:07 - Insertar ZGSLPMI01A.0 - linenr 400000
+2024/02/29 12:06:09 - Obtener campos ZGSLPMI01T 2.0 - linenr 450000
+2024/02/29 12:06:09 - Insertar ZGSLPMI01A.0 - linenr 450000
+2024/02/29 12:06:10 - Obtener campos ZGSLPMI01T 2.0 - linenr 500000
+2024/02/29 12:06:11 - Insertar ZGSLPMI01A.0 - linenr 500000
+2024/02/29 12:06:12 - Obtener campos ZGSLPMI01T 2.0 - linenr 550000
+2024/02/29 12:06:12 - Insertar ZGSLPMI01A.0 - linenr 550000
+2024/02/29 12:06:13 - Obtener campos ZGSLPMI01T 2.0 - linenr 600000
+2024/02/29 12:06:14 - Insertar ZGSLPMI01A.0 - linenr 600000
+2024/02/29 12:06:15 - Obtener campos ZGSLPMI01T 2.0 - linenr 650000
+2024/02/29 12:06:15 - Insertar ZGSLPMI01A.0 - linenr 650000
+2024/02/29 12:06:17 - Obtener campos ZGSLPMI01T 2.0 - linenr 700000
+2024/02/29 12:06:17 - Insertar ZGSLPMI01A.0 - linenr 700000
+2024/02/29 12:06:18 - Obtener campos ZGSLPMI01T 2.0 - linenr 750000
+2024/02/29 12:06:19 - Insertar ZGSLPMI01A.0 - linenr 750000
+2024/02/29 12:06:20 - Obtener campos ZGSLPMI01T 2.0 - linenr 800000
+2024/02/29 12:06:20 - Insertar ZGSLPMI01A.0 - linenr 800000
+2024/02/29 12:06:22 - Obtener campos ZGSLPMI01T 2.0 - linenr 850000
+2024/02/29 12:06:22 - Insertar ZGSLPMI01A.0 - linenr 850000
+2024/02/29 12:06:24 - Obtener campos ZGSLPMI01T 2.0 - linenr 900000
+2024/02/29 12:06:24 - Insertar ZGSLPMI01A.0 - linenr 900000
+2024/02/29 12:06:25 - Obtener campos ZGSLPMI01T 2.0 - linenr 950000
+2024/02/29 12:06:26 - Insertar ZGSLPMI01A.0 - linenr 950000
+2024/02/29 12:06:27 - Obtener campos ZGSLPMI01T 2.0 - linenr 1000000
+2024/02/29 12:06:27 - Insertar ZGSLPMI01A.0 - linenr 1000000
+2024/02/29 12:06:29 - Obtener campos ZGSLPMI01T 2.0 - linenr 1050000
+2024/02/29 12:06:29 - Insertar ZGSLPMI01A.0 - linenr 1050000
+2024/02/29 12:06:31 - Obtener campos ZGSLPMI01T 2.0 - linenr 1100000
+2024/02/29 12:06:31 - Insertar ZGSLPMI01A.0 - linenr 1100000
+2024/02/29 12:06:34 - Obtener campos ZGSLPMI01T 2.0 - linenr 1150000
+2024/02/29 12:06:34 - Insertar ZGSLPMI01A.0 - linenr 1150000
+2024/02/29 12:06:36 - Obtener campos ZGSLPMI01T 2.0 - linenr 1200000
+2024/02/29 12:06:36 - Insertar ZGSLPMI01A.0 - linenr 1200000
+2024/02/29 12:06:37 - Obtener campos ZGSLPMI01T 2.0 - linenr 1250000
+2024/02/29 12:06:38 - Insertar ZGSLPMI01A.0 - linenr 1250000
+2024/02/29 12:06:39 - Obtener campos ZGSLPMI01T 2.0 - linenr 1300000
+2024/02/29 12:06:39 - Insertar ZGSLPMI01A.0 - linenr 1300000
+2024/02/29 12:06:40 - Obtener campos ZGSLPMI01T 2.0 - linenr 1350000
+2024/02/29 12:06:41 - Insertar ZGSLPMI01A.0 - linenr 1350000
+2024/02/29 12:06:42 - Obtener campos ZGSLPMI01T 2.0 - linenr 1400000
+2024/02/29 12:06:42 - Insertar ZGSLPMI01A.0 - linenr 1400000
+2024/02/29 12:06:44 - Obtener campos ZGSLPMI01T 2.0 - linenr 1450000
+2024/02/29 12:06:44 - Insertar ZGSLPMI01A.0 - linenr 1450000
+2024/02/29 12:06:45 - Obtener campos ZGSLPMI01T 2.0 - linenr 1500000
+2024/02/29 12:06:46 - Insertar ZGSLPMI01A.0 - linenr 1500000
+2024/02/29 12:06:47 - Obtener campos ZGSLPMI01T 2.0 - linenr 1550000
+2024/02/29 12:06:47 - Insertar ZGSLPMI01A.0 - linenr 1550000
+2024/02/29 12:06:49 - Obtener campos ZGSLPMI01T 2.0 - linenr 1600000
+2024/02/29 12:06:49 - Insertar ZGSLPMI01A.0 - linenr 1600000
+2024/02/29 12:06:51 - Obtener campos ZGSLPMI01T 2.0 - linenr 1650000
+2024/02/29 12:06:51 - Insertar ZGSLPMI01A.0 - linenr 1650000
+2024/02/29 12:06:52 - Obtener campos ZGSLPMI01T 2.0 - linenr 1700000
+2024/02/29 12:06:53 - Insertar ZGSLPMI01A.0 - linenr 1700000
+2024/02/29 12:06:54 - Obtener campos ZGSLPMI01T 2.0 - linenr 1750000
+2024/02/29 12:06:54 - Insertar ZGSLPMI01A.0 - linenr 1750000
+2024/02/29 12:06:55 - Obtener campos ZGSLPMI01T 2.0 - linenr 1800000
+2024/02/29 12:06:56 - Insertar ZGSLPMI01A.0 - linenr 1800000
+2024/02/29 12:06:57 - Obtener campos ZGSLPMI01T 2.0 - linenr 1850000
+2024/02/29 12:06:57 - Insertar ZGSLPMI01A.0 - linenr 1850000
+2024/02/29 12:06:59 - Obtener campos ZGSLPMI01T 2.0 - linenr 1900000
+2024/02/29 12:06:59 - Insertar ZGSLPMI01A.0 - linenr 1900000
+2024/02/29 12:07:00 - Obtener campos ZGSLPMI01T 2.0 - linenr 1950000
+2024/02/29 12:07:01 - Insertar ZGSLPMI01A.0 - linenr 1950000
+2024/02/29 12:07:02 - Obtener campos ZGSLPMI01T 2.0 - linenr 2000000
+2024/02/29 12:07:02 - Insertar ZGSLPMI01A.0 - linenr 2000000
+2024/02/29 12:07:04 - Obtener campos ZGSLPMI01T 2.0 - linenr 2050000
+2024/02/29 12:07:04 - Insertar ZGSLPMI01A.0 - linenr 2050000
+2024/02/29 12:07:05 - Obtener campos ZGSLPMI01T 2.0 - linenr 2100000
+2024/02/29 12:07:06 - Insertar ZGSLPMI01A.0 - linenr 2100000
+2024/02/29 12:07:07 - Obtener campos ZGSLPMI01T 2.0 - linenr 2150000
+2024/02/29 12:07:07 - Insertar ZGSLPMI01A.0 - linenr 2150000
+2024/02/29 12:07:08 - Obtener campos ZGSLPMI01T 2.0 - linenr 2200000
+2024/02/29 12:07:09 - Insertar ZGSLPMI01A.0 - linenr 2200000
+2024/02/29 12:07:10 - Obtener campos ZGSLPMI01T 2.0 - linenr 2250000
+2024/02/29 12:07:10 - Insertar ZGSLPMI01A.0 - linenr 2250000
+2024/02/29 12:07:11 - LEER ZGSLPMI01T 2.0 - Finished processing (I=0, O=0, R=1, W=2292895, U=0, E=0)
+2024/02/29 12:07:12 - Obtener campos ZGSLPMI01T 2.0 - Finished processing (I=0, O=0, R=2292895, W=2292895, U=0, E=0)
+2024/02/29 12:07:12 - Insertar ZGSLPMI01A.0 - Finished processing (I=0, O=2292895, R=2292895, W=2292895, U=0, E=0)
+2024/02/29 12:07:12 - jb_GeneralDataZ - Starting entry [Eliminar ZBB ]
+2024/02/29 12:07:12 - jb_GeneralDataZ - Starting entry [ZBB COEP]
+2024/02/29 12:07:12 - ZBB COEP - Loading transformation from repository [ZBB COEP] in directory [/BU/ZBB-CAC]
+2024/02/29 12:07:14 - ZBB COEP - Dispatching started for transformation [ZBB COEP]
+2024/02/29 12:07:14 - Insertar ZbbCOEP.0 - Connected to database [BU_BUCDWCCENTER] (commit=1000)
+2024/02/29 12:07:18 - GET COEP.0 - Finished reading query, closing connection.
+2024/02/29 12:07:18 - GET COEP.0 - Finished processing (I=6744, O=0, R=0, W=6744, U=0, E=0)
+2024/02/29 12:07:18 - Insertar ZbbCOEP.0 - Finished processing (I=0, O=6744, R=6744, W=6744, U=0, E=0)
+2024/02/29 12:07:18 - jb_GeneralDataZ - Starting entry [CiclosAuxiliar]
+2024/02/29 12:07:18 - CiclosAuxiliar - Loading transformation from repository [CiclosAuxiliar] in directory [/BU/ZBB-CAC]
+2024/02/29 12:07:19 - CiclosAuxiliar - Dispatching started for transformation [CiclosAuxiliar]
+2024/02/29 12:07:19 - Insertar CiclosAuxiliares.0 - Connected to database [BU_BUCDWCCENTER] (commit=1000)
+2024/02/29 12:07:20 - Ciclos.0 - Finished reading query, closing connection.
+2024/02/29 12:07:20 - Ciclos.0 - Finished processing (I=22, O=0, R=0, W=22, U=0, E=0)
+2024/02/29 12:07:20 - Insertar CiclosAuxiliares.0 - Finished processing (I=0, O=22, R=22, W=22, U=0, E=0)
+2024/02/29 12:07:20 - jb_GeneralDataZ - Starting entry [ZBB Z RD]
+2024/02/29 12:07:20 - jb_GeneralDataZ - Starting entry [StgToDW]
+2024/02/29 12:19:40 - jb_GeneralDataZ - Starting entry [StgToDW Cierre]
+2024/02/29 12:19:40 - jb_GeneralDataZ - Starting entry [Conversiones MYD CAC]
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [Conversiones MYD CAC] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [StgToDW Cierre] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [StgToDW] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [ZBB Z RD] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [CiclosAuxiliar] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [ZBB COEP] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [Eliminar ZBB ] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [ZGSLPMI01T Detalle] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [ZGSLPMI01T HEADER] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [Variables] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [UpdateFechaCorrida] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Finished job entry [Set variables] (result=[false])
+2024/02/29 12:20:36 - jb_GeneralDataZ - Job execution finished
+2024/02/29 12:20:36 - Kitchen - Finished!
+2024/02/29 12:20:36 - Kitchen - Start=2024/02/29 12:00:06.517, Stop=2024/02/29 12:20:36.812
+2024/02/29 12:20:36 - Kitchen - Processing ended after 20 minutes and 30 seconds (1230 seconds total).

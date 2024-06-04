@@ -1,0 +1,6 @@
+{
+  "Name": "Precios_Hes",
+  "RunStatusId": 0,
+  "LastExecution": "2024-02-29T12:00:06",
+  "LastOutcomeMessage": "Log File Name: |transaction_Precios_Hes.log|  | Processing stopped because of an error: | An error occurred reading job [Precios_Hes] from the repository | Can't find job : Precios_Hes | ERROR: Kitchen can't continue because the job couldn't be loaded."
+}

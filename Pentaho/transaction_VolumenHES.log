@@ -1,0 +1,158 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"VolumenHES" /dir:BU/Volumen_HES/ /user:admin /pass:admin /level:Basic 
+2023/11/13 13:00:02 - Kitchen - Logging is at level : Basic logging
+2023/11/13 13:00:02 - Kitchen - Start of run.
+2023/11/13 13:00:02 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2023/11/13 13:00:07 - VolumenHES - Start of job execution
+2023/11/13 13:00:07 - VolumenHES - Starting entry [Set variables]
+2023/11/13 13:00:07 - VolumenHES - Starting entry [UpdateFechaCorrida]
+2023/11/13 13:00:09 - VolumenHES - Starting entry [Variables Fecha]
+2023/11/13 13:00:09 - Variables Fecha - Loading transformation from repository [Variables Fecha] in directory [/BU/Volumen_HES]
+2023/11/13 13:00:10 - Variables Fecha - Dispatching started for transformation [Variables Fecha]
+2023/11/13 13:00:11 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2023/11/13 13:00:11 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2023/11/13 13:00:11 - Set Variables.0 - Setting environment variables...
+2023/11/13 13:00:11 - Set Variables.0 - Set variable FechaDesde to value [20231101]
+2023/11/13 13:00:11 - Set Variables.0 - Set variable FechaHasta to value [20231113]
+2023/11/13 13:00:11 - Set Variables.0 - Set variable LogsID to value [4668]
+2023/11/13 13:00:11 - Write to log.0 - 
+2023/11/13 13:00:11 - Write to log.0 - ------------> Linenr 1------------------------------
+2023/11/13 13:00:11 - Write to log.0 - Executado FechaDesde
+2023/11/13 13:00:11 - Write to log.0 - 
+2023/11/13 13:00:11 - Write to log.0 - FechaDesde = 20231101
+2023/11/13 13:00:11 - Write to log.0 - FechaHasta = 20231113
+2023/11/13 13:00:11 - Write to log.0 - 
+2023/11/13 13:00:11 - Write to log.0 - ====================
+2023/11/13 13:00:11 - Set Variables.0 - Finished after 1 rows.
+2023/11/13 13:00:11 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2023/11/13 13:00:11 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2023/11/13 13:00:11 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2023/11/13 13:00:11 - VolumenHES - Starting entry [AUFM]
+2023/11/13 13:00:11 - AUFM - Loading transformation from repository [AUFM] in directory [/BU/Volumen_HES]
+2023/11/13 13:00:12 - AUFM - Dispatching started for transformation [AUFM]
+2023/11/13 13:00:12 - AUFM.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2023/11/13 13:00:13 - Table input.0 - Finished reading query, closing connection.
+2023/11/13 13:00:13 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: AUFM
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MJAHR
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: ZEILE
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: BLDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: BWART
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: WERKS
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: LGORT
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: CHARG
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: LIFNR
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: KDAUF
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: KDPOS
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: SHKZG
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: DMBTR
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: WAERS
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: MENGE
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: MEINS
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: ERFMG
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: ERFME
+Table: FIELDS, Name: FIELDNAME, Row: 22, Value: EBELN
+Table: FIELDS, Name: FIELDNAME, Row: 23, Value: EBELP
+Table: FIELDS, Name: FIELDNAME, Row: 24, Value: ELIKZ
+Table: FIELDS, Name: FIELDNAME, Row: 25, Value: WEMPF
+Table: FIELDS, Name: FIELDNAME, Row: 26, Value: ABLAD
+Table: FIELDS, Name: FIELDNAME, Row: 27, Value: AUFNR
+Table: FIELDS, Name: FIELDNAME, Row: 28, Value: RSNUM
+Table: FIELDS, Name: FIELDNAME, Row: 29, Value: RSPOS
+Table: FIELDS, Name: FIELDNAME, Row: 30, Value: RSART
+Table: FIELDS, Name: FIELDNAME, Row: 31, Value: KZEAR
+Table: FIELDS, Name: FIELDNAME, Row: 32, Value: KZBEW
+Table: FIELDS, Name: FIELDNAME, Row: 33, Value: WEUNB
+Table: FIELDS, Name: FIELDNAME, Row: 34, Value: PS_PSP_PNR
+Table: FIELDS, Name: FIELDNAME, Row: 35, Value: NPLNR
+Table: FIELDS, Name: FIELDNAME, Row: 36, Value: AUFPL
+Table: FIELDS, Name: FIELDNAME, Row: 37, Value: APLZL
+Table: FIELDS, Name: FIELDNAME, Row: 38, Value: SAKTO
+Table: FIELDS, Name: FIELDNAME, Row: 39, Value: KOKRS
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BUDAT >=  '20231101' AND BUDAT <=  '20231113'
+2023/11/13 13:00:29 - Split Fields 3.0 - linenr 50000
+2023/11/13 13:00:30 - AUFM.0 - linenr 50000
+2023/11/13 13:00:30 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=78506, U=0, E=0)
+2023/11/13 13:00:31 - Split Fields 3.0 - Finished processing (I=0, O=0, R=78506, W=78506, U=0, E=0)
+2023/11/13 13:00:31 - AUFM.0 - Finished processing (I=0, O=78506, R=78506, W=78506, U=0, E=0)
+2023/11/13 13:00:31 - VolumenHES - Starting entry [AFRU]
+2023/11/13 13:00:31 - AFRU - Loading transformation from repository [AFRU] in directory [/BU/Volumen_HES]
+2023/11/13 13:00:33 - AFRU - Dispatching started for transformation [AFRU]
+2023/11/13 13:00:33 - AFRU.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2023/11/13 13:00:33 - Table input.0 - Finished reading query, closing connection.
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: AFRU
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: ARBID
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: WABLNR
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: RUECK
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: RMZHL
+Table: OPTIONS, Name: TEXT, Row: 0, Value: ERSDA >=  '20231101' AND ERSDA <=  '20231113'
+2023/11/13 13:00:33 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2023/11/13 13:00:59 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=52801, U=0, E=0)
+2023/11/13 13:00:59 - Split Fields 3.0 - linenr 50000
+2023/11/13 13:00:59 - Split Fields 3.0 - Finished processing (I=0, O=0, R=52801, W=52801, U=0, E=0)
+2023/11/13 13:01:00 - AFRU.0 - linenr 50000
+2023/11/13 13:01:00 - AFRU.0 - Finished processing (I=0, O=52801, R=52801, W=52801, U=0, E=0)
+2023/11/13 13:01:00 - VolumenHES - Starting entry [AFWI]
+2023/11/13 13:01:00 - AFWI - Loading transformation from repository [AFWI] in directory [/BU/Volumen_HES]
+2023/11/13 13:01:01 - AFWI - Dispatching started for transformation [AFWI]
+2023/11/13 13:01:01 - AFWI.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2023/11/13 13:01:01 - Table input.0 - Finished reading query, closing connection.
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: AFWI
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: RUECK
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: RMZHL
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: MJAHR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: MJAHR =  '2023' 
+2023/11/13 13:01:01 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2023/11/13 13:01:08 - Split Fields 3.0 - linenr 50000
+2023/11/13 13:01:08 - AFWI.0 - linenr 50000
+2023/11/13 13:01:09 - Split Fields 3.0 - linenr 100000
+2023/11/13 13:01:10 - AFWI.0 - linenr 100000
+2023/11/13 13:01:11 - Split Fields 3.0 - linenr 150000
+2023/11/13 13:01:11 - AFWI.0 - linenr 150000
+2023/11/13 13:01:11 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=193967, U=0, E=0)
+2023/11/13 13:01:12 - Split Fields 3.0 - Finished processing (I=0, O=0, R=193967, W=193967, U=0, E=0)
+2023/11/13 13:01:12 - AFWI.0 - Finished processing (I=0, O=193967, R=193967, W=193967, U=0, E=0)
+2023/11/13 13:01:12 - VolumenHES - Starting entry [From STG hacia DW]
+2023/11/13 13:01:13 - VolumenHES - Starting entry [Update Makt]
+2023/11/13 13:01:14 - VolumenHES - Starting entry [JobVolumenDaily]
+2023/11/13 13:06:05 - VolumenHES - Starting entry [UpdateProceso]
+2023/11/13 13:06:05 - VolumenHES - Starting entry [Evaluate rows number in a table]
+2023/11/13 13:06:05 - VolumenHES - Starting entry [ Descarga HES Completado]
+2023/11/13 13:06:05 - VolumenHES - Starting entry [Success]
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [Success] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [ Descarga HES Completado] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [Evaluate rows number in a table] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [UpdateProceso] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [JobVolumenDaily] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [Update Makt] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [From STG hacia DW] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [AFWI] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [AFRU] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [AUFM] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [Variables Fecha] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [UpdateFechaCorrida] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Finished job entry [Set variables] (result=[true])
+2023/11/13 13:06:05 - VolumenHES - Job execution finished
+2023/11/13 13:06:05 - Kitchen - Finished!
+2023/11/13 13:06:05 - Kitchen - Start=2023/11/13 13:00:02.933, Stop=2023/11/13 13:06:05.945
+2023/11/13 13:06:05 - Kitchen - Processing ended after 6 minutes and 3 seconds (363 seconds total).

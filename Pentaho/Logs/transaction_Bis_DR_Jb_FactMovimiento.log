@@ -1,0 +1,360 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"Bis_DR_Jb_FactMovimiento" /dir:BIS/FactMovimientos/ /user:admin /pass:admin /level:Basic 
+2024/02/29 07:00:03 - Kitchen - Logging is at level : Basic logging
+2024/02/29 07:00:03 - Kitchen - Start of run.
+2024/02/29 07:00:03 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/29 07:00:07 - Bis_DR_Jb_FactMovimiento - Start of job execution
+2024/02/29 07:00:07 - Bis_DR_Jb_FactMovimiento - Starting entry [Truncate table SAPSTG]
+2024/02/29 07:00:07 - Bis_DR_Jb_FactMovimiento - Starting entry [Truncate Table Proceso]
+2024/02/29 07:00:07 - Bis_DR_Jb_FactMovimiento - Starting entry [Insertar Fechas Procesar]
+2024/02/29 07:00:08 - Bis_DR_Jb_FactMovimiento - Starting entry [Actualizar Corrida Counter ]
+2024/02/29 07:00:08 - Bis_DR_Jb_FactMovimiento - Starting entry [Validacion Proceso Dependientes True]
+2024/02/29 07:00:08 - Bis_DR_Jb_FactMovimiento - Starting entry [Fijar Fecha Proceso]
+2024/02/29 07:00:08 - Bis_DR_Jb_FactMovimiento - Starting entry [Bis_DR_Tf_ActualizarFactMovimietoktr]
+2024/02/29 07:00:08 - Bis_DR_Tf_ActualizarFactMovimietoktr - Loading transformation from repository [Bis_DR_Tf_ActualizarFactMovimietoktr] in directory [/BIS/FactMovimientos]
+2024/02/29 07:00:10 - Bis_DR_Tf_ActualizarFactMovimietoktr - Dispatching started for transformation [Bis_DR_Tf_ActualizarFactMovimietoktr]
+2024/02/29 07:00:10 - WB2_V_MKPF_MSEG2.0 - Connected to database [BI02_BisSTG_SAP] (commit=1000)
+2024/02/29 07:00:10 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2024/02/29 07:00:10 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: WB2_V_MKPF_MSEG2
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: BLDAT
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: CPUDT
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: CPUTM
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: BKTXT
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: WERKS_I
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BLART
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: USNAM
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: BWART_I
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: MATNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: LGORT_I
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: CHARG_I
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: WAERS_I
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: DMBTR_I
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: MENGE_I
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: MEINS_I
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: ERFMG_I
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: AUFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: ERFME_I
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: LIFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 22, Value: KUNNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 23, Value: LINE_ID_I
+Table: FIELDS, Name: FIELDNAME, Row: 24, Value: EBELN_I
+Table: FIELDS, Name: FIELDNAME, Row: 25, Value: KOSTL_I
+Table: FIELDS, Name: FIELDNAME, Row: 26, Value: BUALT_I
+Table: FIELDS, Name: FIELDNAME, Row: 27, Value: SAKTO_I
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BUDAT >=  '20240201' AND BUDAT <=  '20240202'
+2024/02/29 07:00:10 - PARAMETER_MKPF.0 - Finished reading query, closing connection.
+2024/02/29 07:00:10 - PARAMETER_MKPF.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 07:00:24 - Split Fields 3.0 - linenr 50000
+2024/02/29 07:00:25 - Filter rows.0 - linenr 50000
+2024/02/29 07:00:25 - WB2_V_MKPF_MSEG2.0 - linenr 50000
+2024/02/29 07:00:27 - Split Fields 3.0 - linenr 100000
+2024/02/29 07:00:28 - Filter rows.0 - linenr 100000
+2024/02/29 07:00:29 - WB2_V_MKPF_MSEG2.0 - linenr 100000
+2024/02/29 07:00:30 - Split Fields 3.0 - linenr 150000
+2024/02/29 07:00:30 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=168355, U=0, E=0)
+2024/02/29 07:00:30 - Filter rows.0 - linenr 150000
+2024/02/29 07:00:31 - Split Fields 3.0 - Finished processing (I=0, O=0, R=168355, W=168355, U=0, E=0)
+2024/02/29 07:00:31 - WB2_V_MKPF_MSEG2.0 - linenr 150000
+2024/02/29 07:00:31 - Filter rows.0 - Finished processing (I=0, O=0, R=168355, W=168355, U=0, E=0)
+2024/02/29 07:00:32 - WB2_V_MKPF_MSEG2.0 - Finished processing (I=0, O=168355, R=168355, W=168355, U=0, E=0)
+2024/02/29 07:00:32 - Bis_DR_Jb_FactMovimiento - Starting entry [Finish Process ]
+2024/02/29 07:00:32 - Bis_DR_Jb_FactMovimiento - Starting entry [Proxima Fecha]
+2024/02/29 07:00:32 - Bis_DR_Jb_FactMovimiento - Starting entry [Bis_DR_Tf_ActualizarFactMovimietoktr]
+2024/02/29 07:00:32 - Bis_DR_Jb_FactMovimiento - Loading transformation from repository [Bis_DR_Tf_ActualizarFactMovimietoktr] in directory [/BIS/FactMovimientos]
+2024/02/29 07:00:33 - Bis_DR_Tf_ActualizarFactMovimietoktr - Dispatching started for transformation [Bis_DR_Tf_ActualizarFactMovimietoktr]
+2024/02/29 07:00:33 - WB2_V_MKPF_MSEG2.0 - Connected to database [BI02_BisSTG_SAP] (commit=1000)
+2024/02/29 07:00:33 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2024/02/29 07:00:33 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: WB2_V_MKPF_MSEG2
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: BLDAT
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: CPUDT
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: CPUTM
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: BKTXT
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: WERKS_I
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BLART
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: USNAM
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: BWART_I
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: MATNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: LGORT_I
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: CHARG_I
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: WAERS_I
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: DMBTR_I
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: MENGE_I
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: MEINS_I
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: ERFMG_I
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: AUFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: ERFME_I
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: LIFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 22, Value: KUNNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 23, Value: LINE_ID_I
+Table: FIELDS, Name: FIELDNAME, Row: 24, Value: EBELN_I
+Table: FIELDS, Name: FIELDNAME, Row: 25, Value: KOSTL_I
+Table: FIELDS, Name: FIELDNAME, Row: 26, Value: BUALT_I
+Table: FIELDS, Name: FIELDNAME, Row: 27, Value: SAKTO_I
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BUDAT >=  '20240203' AND BUDAT <=  '20240209'
+2024/02/29 07:00:33 - PARAMETER_MKPF.0 - Finished reading query, closing connection.
+2024/02/29 07:00:33 - PARAMETER_MKPF.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 07:01:11 - Split Fields 3.0 - linenr 50000
+2024/02/29 07:01:13 - Filter rows.0 - linenr 50000
+2024/02/29 07:01:15 - WB2_V_MKPF_MSEG2.0 - linenr 50000
+2024/02/29 07:01:18 - Split Fields 3.0 - linenr 100000
+2024/02/29 07:01:19 - Filter rows.0 - linenr 100000
+2024/02/29 07:01:20 - WB2_V_MKPF_MSEG2.0 - linenr 100000
+2024/02/29 07:01:23 - Split Fields 3.0 - linenr 150000
+2024/02/29 07:01:24 - Filter rows.0 - linenr 150000
+2024/02/29 07:01:25 - WB2_V_MKPF_MSEG2.0 - linenr 150000
+2024/02/29 07:01:27 - Split Fields 3.0 - linenr 200000
+2024/02/29 07:01:27 - Filter rows.0 - linenr 200000
+2024/02/29 07:01:28 - WB2_V_MKPF_MSEG2.0 - linenr 200000
+2024/02/29 07:01:29 - Split Fields 3.0 - linenr 250000
+2024/02/29 07:01:29 - Filter rows.0 - linenr 250000
+2024/02/29 07:01:31 - WB2_V_MKPF_MSEG2.0 - linenr 250000
+2024/02/29 07:01:33 - Split Fields 3.0 - linenr 300000
+2024/02/29 07:01:34 - Filter rows.0 - linenr 300000
+2024/02/29 07:01:35 - WB2_V_MKPF_MSEG2.0 - linenr 300000
+2024/02/29 07:01:37 - Split Fields 3.0 - linenr 350000
+2024/02/29 07:01:37 - Filter rows.0 - linenr 350000
+2024/02/29 07:01:38 - WB2_V_MKPF_MSEG2.0 - linenr 350000
+2024/02/29 07:01:39 - Split Fields 3.0 - linenr 400000
+2024/02/29 07:01:40 - Filter rows.0 - linenr 400000
+2024/02/29 07:01:42 - WB2_V_MKPF_MSEG2.0 - linenr 400000
+2024/02/29 07:01:52 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=451125, U=0, E=0)
+2024/02/29 07:01:53 - Split Fields 3.0 - linenr 450000
+2024/02/29 07:01:54 - Split Fields 3.0 - Finished processing (I=0, O=0, R=451125, W=451125, U=0, E=0)
+2024/02/29 07:01:55 - Filter rows.0 - linenr 450000
+2024/02/29 07:01:55 - Filter rows.0 - Finished processing (I=0, O=0, R=451125, W=451125, U=0, E=0)
+2024/02/29 07:01:55 - WB2_V_MKPF_MSEG2.0 - linenr 450000
+2024/02/29 07:01:55 - WB2_V_MKPF_MSEG2.0 - Finished processing (I=0, O=451125, R=451125, W=451125, U=0, E=0)
+2024/02/29 07:01:55 - Bis_DR_Jb_FactMovimiento - Starting entry [Finish Process ]
+2024/02/29 07:01:55 - Bis_DR_Jb_FactMovimiento - Starting entry [Proxima Fecha]
+2024/02/29 07:01:55 - Bis_DR_Jb_FactMovimiento - Starting entry [Bis_DR_Tf_ActualizarFactMovimietoktr]
+2024/02/29 07:01:55 - Bis_DR_Jb_FactMovimiento - Loading transformation from repository [Bis_DR_Tf_ActualizarFactMovimietoktr] in directory [/BIS/FactMovimientos]
+2024/02/29 07:01:56 - Bis_DR_Jb_FactMovimiento - Dispatching started for transformation [Bis_DR_Tf_ActualizarFactMovimietoktr]
+2024/02/29 07:01:57 - WB2_V_MKPF_MSEG2.0 - Connected to database [BI02_BisSTG_SAP] (commit=1000)
+2024/02/29 07:01:57 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2024/02/29 07:01:57 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: WB2_V_MKPF_MSEG2
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: BLDAT
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: CPUDT
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: CPUTM
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: BKTXT
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: WERKS_I
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BLART
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: USNAM
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: BWART_I
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: MATNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: LGORT_I
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: CHARG_I
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: WAERS_I
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: DMBTR_I
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: MENGE_I
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: MEINS_I
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: ERFMG_I
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: AUFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: ERFME_I
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: LIFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 22, Value: KUNNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 23, Value: LINE_ID_I
+Table: FIELDS, Name: FIELDNAME, Row: 24, Value: EBELN_I
+Table: FIELDS, Name: FIELDNAME, Row: 25, Value: KOSTL_I
+Table: FIELDS, Name: FIELDNAME, Row: 26, Value: BUALT_I
+Table: FIELDS, Name: FIELDNAME, Row: 27, Value: SAKTO_I
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BUDAT >=  '20240210' AND BUDAT <=  '20240216'
+2024/02/29 07:01:57 - PARAMETER_MKPF.0 - Finished reading query, closing connection.
+2024/02/29 07:01:57 - PARAMETER_MKPF.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 07:02:34 - Split Fields 3.0 - linenr 50000
+2024/02/29 07:02:34 - Filter rows.0 - linenr 50000
+2024/02/29 07:02:35 - WB2_V_MKPF_MSEG2.0 - linenr 50000
+2024/02/29 07:02:36 - Split Fields 3.0 - linenr 100000
+2024/02/29 07:02:36 - Filter rows.0 - linenr 100000
+2024/02/29 07:02:37 - WB2_V_MKPF_MSEG2.0 - linenr 100000
+2024/02/29 07:02:39 - Split Fields 3.0 - linenr 150000
+2024/02/29 07:02:39 - Filter rows.0 - linenr 150000
+2024/02/29 07:02:40 - WB2_V_MKPF_MSEG2.0 - linenr 150000
+2024/02/29 07:02:41 - Split Fields 3.0 - linenr 200000
+2024/02/29 07:02:41 - Filter rows.0 - linenr 200000
+2024/02/29 07:02:41 - WB2_V_MKPF_MSEG2.0 - linenr 200000
+2024/02/29 07:02:42 - Split Fields 3.0 - linenr 250000
+2024/02/29 07:02:43 - Filter rows.0 - linenr 250000
+2024/02/29 07:02:43 - WB2_V_MKPF_MSEG2.0 - linenr 250000
+2024/02/29 07:02:44 - Split Fields 3.0 - linenr 300000
+2024/02/29 07:02:44 - Filter rows.0 - linenr 300000
+2024/02/29 07:02:45 - WB2_V_MKPF_MSEG2.0 - linenr 300000
+2024/02/29 07:02:46 - Split Fields 3.0 - linenr 350000
+2024/02/29 07:02:46 - Filter rows.0 - linenr 350000
+2024/02/29 07:02:46 - WB2_V_MKPF_MSEG2.0 - linenr 350000
+2024/02/29 07:02:47 - Split Fields 3.0 - linenr 400000
+2024/02/29 07:02:48 - Filter rows.0 - linenr 400000
+2024/02/29 07:02:48 - WB2_V_MKPF_MSEG2.0 - linenr 400000
+2024/02/29 07:02:49 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=450098, U=0, E=0)
+2024/02/29 07:02:49 - Split Fields 3.0 - linenr 450000
+2024/02/29 07:02:49 - Split Fields 3.0 - Finished processing (I=0, O=0, R=450098, W=450098, U=0, E=0)
+2024/02/29 07:02:49 - Filter rows.0 - linenr 450000
+2024/02/29 07:02:49 - Filter rows.0 - Finished processing (I=0, O=0, R=450098, W=450098, U=0, E=0)
+2024/02/29 07:02:50 - WB2_V_MKPF_MSEG2.0 - linenr 450000
+2024/02/29 07:02:50 - WB2_V_MKPF_MSEG2.0 - Finished processing (I=0, O=450098, R=450098, W=450098, U=0, E=0)
+2024/02/29 07:02:50 - Bis_DR_Jb_FactMovimiento - Starting entry [Finish Process ]
+2024/02/29 07:02:50 - Bis_DR_Jb_FactMovimiento - Starting entry [Proxima Fecha]
+2024/02/29 07:02:50 - Bis_DR_Jb_FactMovimiento - Starting entry [Bis_DR_Tf_ActualizarFactMovimietoktr]
+2024/02/29 07:02:50 - Bis_DR_Jb_FactMovimiento - Loading transformation from repository [Bis_DR_Tf_ActualizarFactMovimietoktr] in directory [/BIS/FactMovimientos]
+2024/02/29 07:02:51 - Bis_DR_Jb_FactMovimiento - Dispatching started for transformation [Bis_DR_Tf_ActualizarFactMovimietoktr]
+2024/02/29 07:02:51 - WB2_V_MKPF_MSEG2.0 - Connected to database [BI02_BisSTG_SAP] (commit=1000)
+2024/02/29 07:02:51 - Bis_DR_Jb_FactMovimiento - Finished reading query, closing connection.
+2024/02/29 07:02:51 - Bis_DR_Jb_FactMovimiento - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: WB2_V_MKPF_MSEG2
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: BLDAT
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: CPUDT
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: CPUTM
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: BKTXT
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: WERKS_I
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BLART
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: USNAM
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: BWART_I
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: MATNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: LGORT_I
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: CHARG_I
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: WAERS_I
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: DMBTR_I
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: MENGE_I
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: MEINS_I
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: ERFMG_I
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: AUFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: ERFME_I
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: LIFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 22, Value: KUNNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 23, Value: LINE_ID_I
+Table: FIELDS, Name: FIELDNAME, Row: 24, Value: EBELN_I
+Table: FIELDS, Name: FIELDNAME, Row: 25, Value: KOSTL_I
+Table: FIELDS, Name: FIELDNAME, Row: 26, Value: BUALT_I
+Table: FIELDS, Name: FIELDNAME, Row: 27, Value: SAKTO_I
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BUDAT >=  '20240217' AND BUDAT <=  '20240229'
+2024/02/29 07:02:51 - Bis_DR_Jb_FactMovimiento - Finished reading query, closing connection.
+2024/02/29 07:02:51 - Bis_DR_Jb_FactMovimiento - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 07:04:03 - Split Fields 3.0 - linenr 50000
+2024/02/29 07:04:03 - Bis_DR_Jb_FactMovimiento - linenr 50000
+2024/02/29 07:04:04 - WB2_V_MKPF_MSEG2.0 - linenr 50000
+2024/02/29 07:04:06 - Split Fields 3.0 - linenr 100000
+2024/02/29 07:04:09 - Bis_DR_Jb_FactMovimiento - linenr 100000
+2024/02/29 07:04:09 - WB2_V_MKPF_MSEG2.0 - linenr 100000
+2024/02/29 07:04:19 - Split Fields 3.0 - linenr 150000
+2024/02/29 07:04:20 - Bis_DR_Jb_FactMovimiento - linenr 150000
+2024/02/29 07:04:20 - WB2_V_MKPF_MSEG2.0 - linenr 150000
+2024/02/29 07:04:21 - Split Fields 3.0 - linenr 200000
+2024/02/29 07:04:22 - Bis_DR_Jb_FactMovimiento - linenr 200000
+2024/02/29 07:04:22 - WB2_V_MKPF_MSEG2.0 - linenr 200000
+2024/02/29 07:04:23 - Split Fields 3.0 - linenr 250000
+2024/02/29 07:04:24 - Bis_DR_Jb_FactMovimiento - linenr 250000
+2024/02/29 07:04:24 - WB2_V_MKPF_MSEG2.0 - linenr 250000
+2024/02/29 07:04:25 - Split Fields 3.0 - linenr 300000
+2024/02/29 07:04:25 - Bis_DR_Jb_FactMovimiento - linenr 300000
+2024/02/29 07:04:26 - WB2_V_MKPF_MSEG2.0 - linenr 300000
+2024/02/29 07:04:27 - Split Fields 3.0 - linenr 350000
+2024/02/29 07:04:27 - Bis_DR_Jb_FactMovimiento - linenr 350000
+2024/02/29 07:04:27 - WB2_V_MKPF_MSEG2.0 - linenr 350000
+2024/02/29 07:04:29 - Split Fields 3.0 - linenr 400000
+2024/02/29 07:04:29 - Bis_DR_Jb_FactMovimiento - linenr 400000
+2024/02/29 07:04:30 - WB2_V_MKPF_MSEG2.0 - linenr 400000
+2024/02/29 07:04:31 - Split Fields 3.0 - linenr 450000
+2024/02/29 07:04:32 - Bis_DR_Jb_FactMovimiento - linenr 450000
+2024/02/29 07:04:32 - WB2_V_MKPF_MSEG2.0 - linenr 450000
+2024/02/29 07:04:33 - Split Fields 3.0 - linenr 500000
+2024/02/29 07:04:34 - Bis_DR_Jb_FactMovimiento - linenr 500000
+2024/02/29 07:04:36 - WB2_V_MKPF_MSEG2.0 - linenr 500000
+2024/02/29 07:04:37 - Split Fields 3.0 - linenr 550000
+2024/02/29 07:04:38 - Bis_DR_Jb_FactMovimiento - linenr 550000
+2024/02/29 07:04:38 - WB2_V_MKPF_MSEG2.0 - linenr 550000
+2024/02/29 07:04:39 - Split Fields 3.0 - linenr 600000
+2024/02/29 07:04:39 - Bis_DR_Jb_FactMovimiento - linenr 600000
+2024/02/29 07:04:40 - WB2_V_MKPF_MSEG2.0 - linenr 600000
+2024/02/29 07:04:41 - Split Fields 3.0 - linenr 650000
+2024/02/29 07:04:41 - Bis_DR_Jb_FactMovimiento - linenr 650000
+2024/02/29 07:04:41 - WB2_V_MKPF_MSEG2.0 - linenr 650000
+2024/02/29 07:04:42 - Split Fields 3.0 - linenr 700000
+2024/02/29 07:04:42 - Bis_DR_Jb_FactMovimiento - linenr 700000
+2024/02/29 07:04:43 - WB2_V_MKPF_MSEG2.0 - linenr 700000
+2024/02/29 07:04:44 - Split Fields 3.0 - linenr 750000
+2024/02/29 07:04:44 - Bis_DR_Jb_FactMovimiento - linenr 750000
+2024/02/29 07:04:45 - WB2_V_MKPF_MSEG2.0 - linenr 750000
+2024/02/29 07:04:46 - Split Fields 3.0 - linenr 800000
+2024/02/29 07:04:46 - Bis_DR_Jb_FactMovimiento - linenr 800000
+2024/02/29 07:04:47 - WB2_V_MKPF_MSEG2.0 - linenr 800000
+2024/02/29 07:04:47 - Bis_DR_Jb_FactMovimiento - Finished processing (I=0, O=0, R=1, W=849284, U=0, E=0)
+2024/02/29 07:04:48 - Split Fields 3.0 - Finished processing (I=0, O=0, R=849284, W=849284, U=0, E=0)
+2024/02/29 07:04:48 - Bis_DR_Jb_FactMovimiento - Finished processing (I=0, O=0, R=849284, W=849284, U=0, E=0)
+2024/02/29 07:04:49 - WB2_V_MKPF_MSEG2.0 - Finished processing (I=0, O=849284, R=849284, W=849284, U=0, E=0)
+2024/02/29 07:04:49 - Bis_DR_Jb_FactMovimiento - Starting entry [Finish Process ]
+2024/02/29 07:04:49 - Bis_DR_Jb_FactMovimiento - Starting entry [Proxima Fecha]
+2024/02/29 07:04:49 - Bis_DR_Jb_FactMovimiento - Finished job entry [Proxima Fecha] (result=[false])
+2024/02/29 07:04:49 - Bis_DR_Jb_FactMovimiento - Finished job entry [Finish Process ] (result=[false])
+2024/02/29 07:04:49 - Bis_DR_Jb_FactMovimiento - Finished job entry [Bis_DR_Tf_ActualizarFactMovimietoktr] (result=[false])
+2024/02/29 07:04:49 - Bis_DR_Jb_FactMovimiento - Starting entry [Insertar LOG Completado]
+2024/02/29 07:04:49 - Bis_DR_Jb_FactMovimiento - Starting entry [Actualizar Tablas Produccion MB51]
+2024/02/29 07:05:39 - Bis_DR_Jb_FactMovimiento - Starting entry [Actualizar Tablas Movimientos MB51 Mes]
+2024/02/29 07:05:47 - Bis_DR_Jb_FactMovimiento - Starting entry [ Counter  2]
+2024/02/29 07:05:47 - Bis_DR_Jb_FactMovimiento - Starting entry [Truncate table SAPSTG 2]
+2024/02/29 07:05:47 - Bis_DR_Jb_FactMovimiento - Starting entry [Insertar Fechas Procesar]
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Starting entry [Actualizar Corrida Counter ]
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Starting entry [Validacion Proceso Dependientes True]
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Starting entry [Fallo por dependencia]
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Fallo por dependencia] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Validacion Proceso Dependientes True] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Actualizar Corrida Counter ] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Insertar Fechas Procesar] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Truncate table SAPSTG 2] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Starting entry [Success]
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Success] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [ Counter  2] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Actualizar Tablas Movimientos MB51 Mes] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Actualizar Tablas Produccion MB51] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Insertar LOG Completado] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Proxima Fecha] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Finish Process ] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Bis_DR_Tf_ActualizarFactMovimietoktr] (result=[true])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Starting entry [Insertar LOG Completado]
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Insertar LOG Completado] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Proxima Fecha] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Finish Process ] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Bis_DR_Tf_ActualizarFactMovimietoktr] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Starting entry [Insertar LOG Completado]
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Insertar LOG Completado] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Proxima Fecha] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Finish Process ] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Bis_DR_Tf_ActualizarFactMovimietoktr] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Fijar Fecha Proceso] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Validacion Proceso Dependientes True] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Actualizar Corrida Counter ] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Insertar Fechas Procesar] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Truncate Table Proceso] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Finished job entry [Truncate table SAPSTG] (result=[false])
+2024/02/29 07:05:48 - Bis_DR_Jb_FactMovimiento - Job execution finished
+2024/02/29 07:05:48 - Kitchen - Finished!
+2024/02/29 07:05:48 - Kitchen - Start=2024/02/29 07:00:03.286, Stop=2024/02/29 07:05:48.690
+2024/02/29 07:05:48 - Kitchen - Processing ended after 5 minutes and 45 seconds (345 seconds total).

@@ -1,0 +1,33 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"Stock_InventarioHistorico" /dir:BU/Stock_InventarioHistorico/ /user:admin /pass:admin /level:Basic 
+2024/02/28 22:00:02 - Kitchen - Logging is at level : Basic logging
+2024/02/28 22:00:02 - Kitchen - Start of run.
+2024/02/28 22:00:02 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/28 22:00:06 - Stock_InventarioHistorico - Start of job execution
+2024/02/28 22:00:06 - Stock_InventarioHistorico - Starting entry [Set variables]
+2024/02/28 22:00:06 - Stock_InventarioHistorico - Starting entry [UpdateFechaCorrida]
+2024/02/28 22:00:06 - Stock_InventarioHistorico - Starting entry [MARD_Historico]
+2024/02/28 22:00:06 - MARD_Historico - Loading transformation from repository [MARD_Historico] in directory [/BU/Stock_InventarioHistorico]
+2024/02/28 22:00:08 - MARD_Historico - Dispatching started for transformation [MARD_Historico]
+2024/02/28 22:00:08 - FactMovimiento_DWIBSBI.0 - Connected to database [BU_BUCDWCCENTER] (commit=1000)
+2024/02/28 22:00:08 - Ordenes Historicos .0 - Finished reading query, closing connection.
+2024/02/28 22:00:08 - Ordenes Historicos .0 - Finished processing (I=1773, O=0, R=0, W=1773, U=0, E=0)
+2024/02/28 22:00:08 - FactMovimiento_DWIBSBI.0 - Finished processing (I=0, O=1773, R=1773, W=1773, U=0, E=0)
+2024/02/28 22:00:08 - Stock_InventarioHistorico - Starting entry [delete Lunes]
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Starting entry [UpdateProceso]
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Starting entry [ Descarga MARD Historico Completado]
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Starting entry [Success]
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Finished job entry [Success] (result=[true])
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Finished job entry [ Descarga MARD Historico Completado] (result=[true])
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Finished job entry [UpdateProceso] (result=[true])
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Finished job entry [delete Lunes] (result=[true])
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Finished job entry [MARD_Historico] (result=[true])
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Finished job entry [UpdateFechaCorrida] (result=[true])
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Finished job entry [Set variables] (result=[true])
+2024/02/28 22:00:09 - Stock_InventarioHistorico - Job execution finished
+2024/02/28 22:00:09 - Kitchen - Finished!
+2024/02/28 22:00:09 - Kitchen - Start=2024/02/28 22:00:02.653, Stop=2024/02/28 22:00:09.813
+2024/02/28 22:00:09 - Kitchen - Processing ended after 7 seconds.

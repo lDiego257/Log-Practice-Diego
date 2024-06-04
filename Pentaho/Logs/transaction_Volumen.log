@@ -1,0 +1,251 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"Volumen" /dir:BU/Volumen/ /user:admin /pass:admin /level:Basic 
+2024/02/29 13:00:05 - Kitchen - Logging is at level : Basic logging
+2024/02/29 13:00:05 - Kitchen - Start of run.
+2024/02/29 13:00:05 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/29 13:00:10 - Volumen - Start of job execution
+2024/02/29 13:00:10 - Volumen - Starting entry [Set variables]
+2024/02/29 13:00:10 - Volumen - Starting entry [UpdateFechaCorrida]
+2024/02/29 13:00:10 - Volumen - Starting entry [Variables Fecha]
+2024/02/29 13:00:10 - Variables Fecha - Loading transformation from repository [Variables Fecha] in directory [/BU/Volumen]
+2024/02/29 13:00:12 - Variables Fecha - Dispatching started for transformation [Variables Fecha]
+2024/02/29 13:00:12 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 13:00:12 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2024/02/29 13:00:12 - Set Variables.0 - Setting environment variables...
+2024/02/29 13:00:12 - Set Variables.0 - Set variable FechaDesde to value [20240201]
+2024/02/29 13:00:12 - Set Variables.0 - Set variable FechaHasta to value [20240229]
+2024/02/29 13:00:12 - Set Variables.0 - Set variable LogsID to value [7650]
+2024/02/29 13:00:12 - Set Variables.0 - Finished after 1 rows.
+2024/02/29 13:00:12 - Write to log.0 - 
+2024/02/29 13:00:12 - Write to log.0 - ------------> Linenr 1------------------------------
+2024/02/29 13:00:12 - Write to log.0 - Executado FechaDesde
+2024/02/29 13:00:12 - Write to log.0 - 
+2024/02/29 13:00:12 - Write to log.0 - FechaDesde = 20240201
+2024/02/29 13:00:12 - Write to log.0 - FechaHasta = 20240229
+2024/02/29 13:00:12 - Write to log.0 - LogsID = 7650
+2024/02/29 13:00:12 - Write to log.0 - 
+2024/02/29 13:00:12 - Write to log.0 - ====================
+2024/02/29 13:00:12 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 13:00:12 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/29 13:00:12 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 13:00:12 - Volumen - Starting entry [DO31]
+2024/02/29 13:00:12 - DO31 - Loading transformation from repository [DO31] in directory [/BU/Volumen]
+2024/02/29 13:00:14 - DO31 - Dispatching started for transformation [DO31]
+2024/02/29 13:00:14 - Carga st_HeaderMovstg.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2024/02/29 13:00:15 - PARAMETER_MKPF.0 - Finished reading query, closing connection.
+2024/02/29 13:00:15 - PARAMETER_MKPF.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: WB2_V_MKPF_MSEG2
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: BLDAT
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: CPUDT
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: CPUTM
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: BKTXT
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: WERKS_I
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BLART
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: USNAM
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: BWART_I
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: MATNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: LGORT_I
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: CHARG_I
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: WAERS_I
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: DMBTR_I
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: MENGE_I
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: MEINS_I
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: ERFMG_I
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: AUFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: ERFME_I
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: LIFNR_I 
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BUDAT >=  '20240201' AND BUDAT <=  '20240229' AND WERKS_I ='DO31'     
+2024/02/29 13:08:10 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=53700, U=0, E=0)
+2024/02/29 13:08:10 - Split Fields 3.0 - linenr 50000
+2024/02/29 13:08:10 - Split Fields 3.0 - Finished processing (I=0, O=0, R=53700, W=53700, U=0, E=0)
+2024/02/29 13:08:10 - Filter rows.0 - linenr 50000
+2024/02/29 13:08:10 - Filter rows.0 - Finished processing (I=0, O=0, R=53700, W=53700, U=0, E=0)
+2024/02/29 13:08:11 - Carga st_HeaderMovstg.0 - linenr 50000
+2024/02/29 13:08:11 - Carga st_HeaderMovstg.0 - Finished processing (I=0, O=53700, R=53700, W=53700, U=0, E=0)
+2024/02/29 13:08:11 - Volumen - Starting entry [DO51]
+2024/02/29 13:08:11 - DO51 - Loading transformation from repository [DO51] in directory [/BU/Volumen]
+2024/02/29 13:08:12 - DO51 - Dispatching started for transformation [DO51]
+2024/02/29 13:08:12 - Carga st_HeaderMovstg.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2024/02/29 13:08:12 - PARAMETER_MKPF.0 - Finished reading query, closing connection.
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: WB2_V_MKPF_MSEG2
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: BLDAT
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: CPUDT
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: CPUTM
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: BKTXT
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: WERKS_I
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BLART
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: USNAM
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: BWART_I
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: MATNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: LGORT_I
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: CHARG_I
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: WAERS_I
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: DMBTR_I
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: MENGE_I
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: MEINS_I
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: ERFMG_I
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: AUFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: ERFME_I
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: LIFNR_I 
+2024/02/29 13:08:12 - PARAMETER_MKPF.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BUDAT >=  '20240201' AND BUDAT <=  '20240229' AND WERKS_I ='DO51'     
+2024/02/29 13:08:34 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=19066, U=0, E=0)
+2024/02/29 13:08:34 - Split Fields 3.0 - Finished processing (I=0, O=0, R=19066, W=19066, U=0, E=0)
+2024/02/29 13:08:34 - Filter rows.0 - Finished processing (I=0, O=0, R=19066, W=19066, U=0, E=0)
+2024/02/29 13:08:35 - Carga st_HeaderMovstg.0 - Finished processing (I=0, O=19066, R=19066, W=19066, U=0, E=0)
+2024/02/29 13:08:35 - Volumen - Starting entry [VC31]
+2024/02/29 13:08:35 - VC31 - Loading transformation from repository [VC31] in directory [/BU/Volumen]
+2024/02/29 13:08:36 - VC31 - Dispatching started for transformation [VC31]
+2024/02/29 13:08:36 - Carga st_HeaderMovstg.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2024/02/29 13:08:36 - PARAMETER_MKPF.0 - Finished reading query, closing connection.
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: WB2_V_MKPF_MSEG2
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: BLDAT
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: CPUDT
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: CPUTM
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: BKTXT
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: WERKS_I
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BLART
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: USNAM
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: BWART_I
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: MATNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: LGORT_I
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: CHARG_I
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: WAERS_I
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: DMBTR_I
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: MENGE_I
+2024/02/29 13:08:36 - PARAMETER_MKPF.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: MEINS_I
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: ERFMG_I
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: AUFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: ERFME_I
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: LIFNR_I 
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BUDAT >=  '20240201' AND BUDAT <=  '20240229' AND WERKS_I ='VC31'     
+2024/02/29 13:08:41 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=28260, U=0, E=0)
+2024/02/29 13:08:41 - Split Fields 3.0 - Finished processing (I=0, O=0, R=28260, W=28260, U=0, E=0)
+2024/02/29 13:08:42 - Filter rows.0 - Finished processing (I=0, O=0, R=28260, W=28260, U=0, E=0)
+2024/02/29 13:08:42 - Carga st_HeaderMovstg.0 - Finished processing (I=0, O=28260, R=28260, W=28260, U=0, E=0)
+2024/02/29 13:08:42 - Volumen - Starting entry [1101]
+2024/02/29 13:08:42 - 1101 - Loading transformation from repository [1101] in directory [/BU/Volumen]
+2024/02/29 13:08:44 - 1101 - Dispatching started for transformation [1101]
+2024/02/29 13:08:44 - Carga st_HeaderMovstg.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2024/02/29 13:08:44 - PARAMETER_MKPF.0 - Finished reading query, closing connection.
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: WB2_V_MKPF_MSEG2
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: BLDAT
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: CPUDT
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: CPUTM
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: BKTXT
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: WERKS_I
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BLART
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: USNAM
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: BWART_I
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: MATNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: LGORT_I
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: CHARG_I
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: WAERS_I
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: DMBTR_I
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: MENGE_I
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: MEINS_I
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: ERFMG_I
+2024/02/29 13:08:44 - PARAMETER_MKPF.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: AUFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: ERFME_I
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: LIFNR_I 
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BUDAT >=  '20240201' AND BUDAT <=  '20240229' AND WERKS_I ='BB23'     
+2024/02/29 13:08:47 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=3702, U=0, E=0)
+2024/02/29 13:08:47 - Split Fields 3.0 - Finished processing (I=0, O=0, R=3702, W=3702, U=0, E=0)
+2024/02/29 13:08:47 - Filter rows.0 - Finished processing (I=0, O=0, R=3702, W=3702, U=0, E=0)
+2024/02/29 13:08:47 - Carga st_HeaderMovstg.0 - Finished processing (I=0, O=3702, R=3702, W=3702, U=0, E=0)
+2024/02/29 13:08:47 - Volumen - Starting entry [1400]
+2024/02/29 13:08:47 - 1400 - Loading transformation from repository [1400] in directory [/BU/Volumen]
+2024/02/29 13:08:49 - 1400 - Dispatching started for transformation [1400]
+2024/02/29 13:08:49 - Carga st_HeaderMovstg.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: WB2_V_MKPF_MSEG2
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+2024/02/29 13:08:49 - PARAMETER_MKPF.0 - Finished reading query, closing connection.
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: BLDAT
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BUDAT
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: CPUDT
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: CPUTM
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XBLNR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: BKTXT
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: WERKS_I
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BLART
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: USNAM
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: BWART_I
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: MATNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: LGORT_I
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: CHARG_I
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: WAERS_I
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: DMBTR_I
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: MENGE_I
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: MEINS_I
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: ERFMG_I
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: AUFNR_I
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: ERFME_I
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: LIFNR_I 
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BUDAT >=  '20240201' AND BUDAT <=  '20240229' AND WERKS_I ='BB26'     
+2024/02/29 13:08:49 - PARAMETER_MKPF.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/29 13:08:52 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=3158, U=0, E=0)
+2024/02/29 13:08:53 - Split Fields 3.0 - Finished processing (I=0, O=0, R=3158, W=3158, U=0, E=0)
+2024/02/29 13:08:53 - Filter rows.0 - Finished processing (I=0, O=0, R=3158, W=3158, U=0, E=0)
+2024/02/29 13:08:53 - Carga st_HeaderMovstg.0 - Finished processing (I=0, O=3158, R=3158, W=3158, U=0, E=0)
+2024/02/29 13:08:53 - Volumen - Starting entry [JobFactMovimientos]
+2024/02/29 13:08:56 - Volumen - Starting entry [JobFactMovimientos Barbados]
+2024/02/29 13:08:56 - Volumen - Starting entry [JobVolumenDaily]
+2024/02/29 13:13:40 - Volumen - Starting entry [Consumo RD]
+2024/02/29 13:18:19 - Volumen - Starting entry [Consumo Barbado]
+2024/02/29 13:19:23 - Volumen - Starting entry [UpdateProceso]
+2024/02/29 13:19:23 - Volumen - Starting entry [Evaluate rows number in a table]
+2024/02/29 13:19:23 - Volumen - Starting entry [FactMovimiento Completado]
+2024/02/29 13:19:24 - Volumen - Starting entry [Success]
+2024/02/29 13:19:24 - Volumen - Finished job entry [Success] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [FactMovimiento Completado] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [Evaluate rows number in a table] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [UpdateProceso] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [Consumo Barbado] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [Consumo RD] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [JobVolumenDaily] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [JobFactMovimientos Barbados] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [JobFactMovimientos] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [1400] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [1101] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [VC31] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [DO51] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [DO31] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [Variables Fecha] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [UpdateFechaCorrida] (result=[true])
+2024/02/29 13:19:24 - Volumen - Finished job entry [Set variables] (result=[true])
+2024/02/29 13:19:24 - Volumen - Job execution finished
+2024/02/29 13:19:24 - Kitchen - Finished!
+2024/02/29 13:19:24 - Kitchen - Start=2024/02/29 13:00:05.527, Stop=2024/02/29 13:19:24.290
+2024/02/29 13:19:24 - Kitchen - Processing ended after 19 minutes and 18 seconds (1158 seconds total).

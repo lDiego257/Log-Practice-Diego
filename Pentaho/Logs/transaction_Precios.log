@@ -1,0 +1,171 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"Precios" /dir:BU/Precios/ /user:admin /pass:admin /level:Basic 
+2024/02/29 12:00:06 - Kitchen - Logging is at level : Basic logging
+2024/02/29 12:00:06 - Kitchen - Start of run.
+2024/02/29 12:00:06 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/29 12:00:10 - Precios - Start of job execution
+2024/02/29 12:00:10 - Precios - Starting entry [Set variables CAC]
+2024/02/29 12:00:10 - Precios - Starting entry [UpdateFechaCorrida]
+2024/02/29 12:00:10 - Precios - Starting entry [Get Variables Limpieza]
+2024/02/29 12:00:10 - Get Variables Limpieza - Loading transformation from repository [Get Variables Limpieza] in directory [/BU/Precios]
+2024/02/29 12:00:12 - Get Variables Limpieza - Dispatching started for transformation [Get Variables Limpieza]
+2024/02/29 12:00:12 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 12:00:12 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2024/02/29 12:00:12 - Set Variables.0 - Setting environment variables...
+2024/02/29 12:00:12 - Set Variables.0 - Set variable FechaDesde to value [20240201]
+2024/02/29 12:00:12 - Set Variables.0 - Set variable FechaHasta to value [20240229]
+2024/02/29 12:00:12 - Set Variables.0 - Set variable LogsID to value [7645]
+2024/02/29 12:00:12 - Write to log.0 - 
+2024/02/29 12:00:12 - Write to log.0 - ------------> Linenr 1------------------------------
+2024/02/29 12:00:12 - Write to log.0 - Executado FechaDesde
+2024/02/29 12:00:12 - Write to log.0 - 
+2024/02/29 12:00:12 - Write to log.0 - FechaDesde = 20240201
+2024/02/29 12:00:12 - Write to log.0 - FechaHasta = 20240229
+2024/02/29 12:00:12 - Write to log.0 - LogsID = 7645
+2024/02/29 12:00:12 - Write to log.0 - 
+2024/02/29 12:00:12 - Write to log.0 - ====================
+2024/02/29 12:00:12 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/29 12:00:12 - Set Variables.0 - Finished after 1 rows.
+2024/02/29 12:00:12 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 12:00:12 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 12:00:12 - Precios - Starting entry [jb_CargaDatosSAP_Precios_RD]
+2024/02/29 12:00:13 - jb_CargaDatosSAP_Precios_RD - Starting entry [DetalleCR]
+2024/02/29 12:00:13 - DetalleCR - Loading transformation from repository [DetalleCR] in directory [/BU/Precios]
+2024/02/29 12:00:14 - DetalleCR - Dispatching started for transformation [DetalleCR]
+2024/02/29 12:00:14 - Insertar CKMLCR .0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2024/02/29 12:00:15 - TABLA CKMLCR.0 - Finished reading query, closing connection.
+2024/02/29 12:00:15 - TABLA CKMLCR.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLCR
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: BDATJ
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: POPER
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: PEINH
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: CURTP
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: PVPRS
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: SALK3
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: WAERS
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: STPRS
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BDATJ = '2024' AND POPER  = '2'  
+2024/02/29 12:09:03 - Split Fields 2 2.0 - linenr 50000
+2024/02/29 12:09:04 - Insertar CKMLCR .0 - linenr 50000
+2024/02/29 12:09:05 - Split Fields 2 2.0 - linenr 100000
+2024/02/29 12:09:05 - LEER TABLA SAP 2.0 - Finished processing (I=0, O=0, R=1, W=113486, U=0, E=0)
+2024/02/29 12:09:05 - Insertar CKMLCR .0 - linenr 100000
+2024/02/29 12:09:05 - Split Fields 2 2.0 - Finished processing (I=0, O=0, R=113486, W=113486, U=0, E=0)
+2024/02/29 12:09:06 - Insertar CKMLCR .0 - Finished processing (I=0, O=113486, R=113486, W=113486, U=0, E=0)
+2024/02/29 12:09:06 - jb_CargaDatosSAP_Precios_RD - Starting entry [Detalle]
+2024/02/29 12:09:06 - Detalle - Loading transformation from repository [Detalle] in directory [/BU/Precios]
+2024/02/29 12:09:07 - Detalle - Dispatching started for transformation [Detalle]
+2024/02/29 12:09:07 - Insertar CKMLHD.0 - Connected to database [BU_STGCCENTER] (commit=1000)
+2024/02/29 12:09:07 - TABLA CKMLHD.0 - Finished reading query, closing connection.
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLHD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MLAST
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: XABRECH
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: ABRECHDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XABRERR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: ABRECHUHR
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BWKEY
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: BWTAR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: KZBWS
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: XOBEW
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: VBELN
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: POSNR
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: PSPNR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: LIFNR
+2024/02/29 12:09:07 - TABLA CKMLHD.0 - Finished processing (I=3, O=0, R=0, W=3, U=0, E=0)
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BWKEY = 'DO31'
+2024/02/29 12:09:13 - Split Fields 2 3.0 - linenr 50000
+2024/02/29 12:09:13 - Insertar CKMLHD.0 - linenr 50000
+2024/02/29 12:09:15 - Split Fields 2 3.0 - linenr 100000
+2024/02/29 12:09:15 - Insertar CKMLHD.0 - linenr 100000
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLHD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MLAST
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: XABRECH
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: ABRECHDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XABRERR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: ABRECHUHR
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BWKEY
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: BWTAR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: KZBWS
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: XOBEW
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: VBELN
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: POSNR
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: PSPNR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: LIFNR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BWKEY = 'DO51'
+2024/02/29 12:09:19 - Split Fields 2 3.0 - linenr 150000
+2024/02/29 12:09:20 - Insertar CKMLHD.0 - linenr 150000
+2024/02/29 12:09:21 - Split Fields 2 3.0 - linenr 200000
+2024/02/29 12:09:21 - Insertar CKMLHD.0 - linenr 200000
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: CKMLHD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: KALNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: MLAST
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: XABRECH
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: ABRECHDAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: XABRERR
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: ABRECHUHR
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: BWKEY
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: BWTAR
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: KZBWS
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: XOBEW
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: SOBKZ
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: VBELN
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: POSNR
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: PSPNR
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: LIFNR
+Table: OPTIONS, Name: TEXT, Row: 0, Value: BWKEY = 'VC31'
+2024/02/29 12:09:23 - Split Fields 2 3.0 - linenr 250000
+2024/02/29 12:09:23 - Insertar CKMLHD.0 - linenr 250000
+2024/02/29 12:09:24 - LEER TABLA SAP 2 3.0 - Finished processing (I=0, O=0, R=3, W=279619, U=0, E=0)
+2024/02/29 12:09:24 - Split Fields 2 3.0 - Finished processing (I=0, O=0, R=279619, W=279619, U=0, E=0)
+2024/02/29 12:09:25 - Insertar CKMLHD.0 - Finished processing (I=0, O=279619, R=279619, W=279619, U=0, E=0)
+2024/02/29 12:09:25 - jb_CargaDatosSAP_Precios_RD - Starting entry [Success]
+2024/02/29 12:09:25 - jb_CargaDatosSAP_Precios_RD - Finished job entry [Success] (result=[true])
+2024/02/29 12:09:25 - jb_CargaDatosSAP_Precios_RD - Finished job entry [Detalle] (result=[true])
+2024/02/29 12:09:25 - jb_CargaDatosSAP_Precios_RD - Finished job entry [DetalleCR] (result=[true])
+2024/02/29 12:09:25 - Precios - Starting entry [Update Makt]
+2024/02/29 12:09:25 - Precios - Starting entry [JobPRecio]
+2024/02/29 12:09:29 - Precios - Starting entry [UpdateProceso]
+2024/02/29 12:09:29 - Precios - Starting entry [Evaluate rows number in a table]
+2024/02/29 12:09:29 - Precios - Starting entry [ Descarga Precios Completado]
+2024/02/29 12:09:30 - Precios - Starting entry [Success]
+2024/02/29 12:09:30 - Precios - Finished job entry [Success] (result=[true])
+2024/02/29 12:09:30 - Precios - Finished job entry [ Descarga Precios Completado] (result=[true])
+2024/02/29 12:09:30 - Precios - Finished job entry [Evaluate rows number in a table] (result=[true])
+2024/02/29 12:09:30 - Precios - Finished job entry [UpdateProceso] (result=[true])
+2024/02/29 12:09:30 - Precios - Finished job entry [JobPRecio] (result=[true])
+2024/02/29 12:09:30 - Precios - Finished job entry [Update Makt] (result=[true])
+2024/02/29 12:09:30 - Precios - Finished job entry [jb_CargaDatosSAP_Precios_RD] (result=[true])
+2024/02/29 12:09:30 - Precios - Finished job entry [Get Variables Limpieza] (result=[true])
+2024/02/29 12:09:30 - Precios - Finished job entry [UpdateFechaCorrida] (result=[true])
+2024/02/29 12:09:30 - Precios - Finished job entry [Set variables CAC] (result=[true])
+2024/02/29 12:09:30 - Precios - Job execution finished
+2024/02/29 12:09:30 - Kitchen - Finished!
+2024/02/29 12:09:30 - Kitchen - Start=2024/02/29 12:00:06.526, Stop=2024/02/29 12:09:30.288
+2024/02/29 12:09:30 - Kitchen - Processing ended after 9 minutes and 23 seconds (563 seconds total).

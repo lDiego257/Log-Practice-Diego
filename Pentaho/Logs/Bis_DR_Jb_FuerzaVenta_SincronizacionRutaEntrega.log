@@ -1,0 +1,17 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"Purchase_Order" /dir:SAP_TRX/PURCHASE_ORDER/ /user:admin /pass:admin /level:Basic 
+2023/03/17 09:00:04 - Kitchen - Logging is at level : Basic logging
+2023/03/17 09:00:04 - Kitchen - Start of run.
+2023/03/17 09:00:04 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2023/03/17 09:00:17 - Purchase_Order - Start of job execution
+2023/03/17 09:00:17 - Purchase_Order - Starting entry [Variables]
+2023/03/17 09:00:17 - Purchase_Order - Starting entry [Begin Process]
+2023/03/17 09:00:17 - Purchase_Order - Finished job entry [Begin Process] (result=[false])
+2023/03/17 09:00:17 - Purchase_Order - Finished job entry [Variables] (result=[false])
+2023/03/17 09:00:17 - Purchase_Order - Job execution finished
+2023/03/17 09:00:17 - Kitchen - Finished!
+2023/03/17 09:00:17 - Kitchen - Start=2023/03/17 09:00:04.623, Stop=2023/03/17 09:00:17.856
+2023/03/17 09:00:17 - Kitchen - Processing ended after 13 seconds.

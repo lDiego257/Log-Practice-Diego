@@ -1,0 +1,45 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"JOB_Inventario_SAP" /dir:BIS/Inventario/ /user:admin /pass:admin /level:Basic 
+2024/02/29 12:50:03 - Kitchen - Logging is at level : Basic logging
+2024/02/29 12:50:03 - Kitchen - Start of run.
+2024/02/29 12:50:03 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/29 12:50:06 - JOB_Inventario_SAP  - Start of job execution
+2024/02/29 12:50:06 - JOB_Inventario_SAP  - Starting entry [Descargar Data de SAP]
+2024/02/29 12:50:06 - Descargar Data de SAP - Loading transformation from repository [Descargar Data de SAP] in directory [/BIS/Inventario]
+2024/02/29 12:50:08 - Descargar Data de SAP - Dispatching started for transformation [Descargar Data de SAP]
+2024/02/29 12:50:08 - ZLOG_INVENTORY1 SAPSTG.0 - Connected to database [BI02_BisSTG_SAP] (commit=1000)
+2024/02/29 12:50:09 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2024/02/29 12:50:09 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/29 12:50:09 - ZLOG_INVENTORY.0 - Finished reading query, closing connection.
+2024/02/29 12:50:09 - ZLOG_INVENTORY.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: ZLOG_INVENTORY1
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: DATUM
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: WERKS
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: HORA
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: QTY_LOGICA
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: QTY_RESERVADA
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: QTY_DISPONIBLE
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: MEINS
+Table: OPTIONS, Name: TEXT, Row: 0, Value: DATUM BETWEEN '20240229' AND '20240229'
+2024/02/29 12:50:23 - RFC_READ_TABLE 1 2.0 - Finished processing (I=0, O=0, R=1, W=49830, U=0, E=0)
+2024/02/29 12:50:25 - Split Fields 1.0 - Finished processing (I=0, O=0, R=49830, W=49830, U=0, E=0)
+2024/02/29 12:50:26 - ZLOG_INVENTORY1 SAPSTG.0 - Finished processing (I=0, O=49830, R=49830, W=49830, U=0, E=0)
+2024/02/29 12:50:26 - JOB_Inventario_SAP  - Starting entry [Eliminar Espacios En Cantidades]
+2024/02/29 12:50:26 - JOB_Inventario_SAP  - Starting entry [Finalizar Proceso]
+2024/02/29 12:50:27 - JOB_Inventario_SAP  - Starting entry [Success]
+2024/02/29 12:50:27 - JOB_Inventario_SAP  - Finished job entry [Success] (result=[true])
+2024/02/29 12:50:27 - JOB_Inventario_SAP  - Finished job entry [Finalizar Proceso] (result=[true])
+2024/02/29 12:50:27 - JOB_Inventario_SAP  - Finished job entry [Eliminar Espacios En Cantidades] (result=[true])
+2024/02/29 12:50:27 - JOB_Inventario_SAP  - Finished job entry [Descargar Data de SAP] (result=[true])
+2024/02/29 12:50:27 - JOB_Inventario_SAP  - Job execution finished
+2024/02/29 12:50:27 - Kitchen - Finished!
+2024/02/29 12:50:27 - Kitchen - Start=2024/02/29 12:50:03.675, Stop=2024/02/29 12:50:27.244
+2024/02/29 12:50:27 - Kitchen - Processing ended after 23 seconds.

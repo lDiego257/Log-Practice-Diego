@@ -1,0 +1,17 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"CKML_PP_PH" /dir:BU/Prices_DR/ /user:admin /pass:admin /level:Basic 
+2024/02/29 07:30:04 - Kitchen - Logging is at level : Basic logging
+2024/02/29 07:30:04 - Kitchen - Start of run.
+2024/02/29 07:30:05 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/29 07:30:09 - CKML_PP_PH - Start of job execution
+2024/02/29 07:30:10 - CKML_PP_PH - Starting entry [Variables]
+2024/02/29 07:30:10 - CKML_PP_PH - Starting entry [Begin Process]
+2024/02/29 07:30:10 - CKML_PP_PH - Finished job entry [Begin Process] (result=[false])
+2024/02/29 07:30:10 - CKML_PP_PH - Finished job entry [Variables] (result=[false])
+2024/02/29 07:30:10 - CKML_PP_PH - Job execution finished
+2024/02/29 07:30:10 - Kitchen - Finished!
+2024/02/29 07:30:10 - Kitchen - Start=2024/02/29 07:30:04.994, Stop=2024/02/29 07:30:10.401
+2024/02/29 07:30:10 - Kitchen - Processing ended after 5 seconds.

@@ -1,0 +1,102 @@
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre7
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre7\bin\java.exe
+
+E:\data-integration>"C:\Program Files\Java\jre7\bin\java.exe"  "-Xmx20000m" "-XX:MaxPermSize=25000m" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-5.4.0.1-130.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen /rep:"PentahoRepoSQLPRD" /job:"Stock_Inventario_Hes" /dir:BU/Stock_Inventario_Hes/ /user:admin /pass:admin /level:Basic 
+2024/02/29 14:00:05 - Kitchen - Logging is at level : Basic logging
+2024/02/29 14:00:05 - Kitchen - Start of run.
+2024/02/29 14:00:05 - RepositoriesMeta - Reading repositories XML file: C:\Users\s-sqladm.MODELO\.kettle\repositories.xml
+2024/02/29 14:00:10 - Stock_Inventario_Hes - Start of job execution
+2024/02/29 14:00:10 - Stock_Inventario_Hes - Starting entry [Set variables CAC]
+2024/02/29 14:00:10 - Stock_Inventario_Hes - Starting entry [UpdateFechaCorrida]
+2024/02/29 14:00:10 - Stock_Inventario_Hes - Starting entry [VariablesFechaGlobal]
+2024/02/29 14:00:10 - VariablesFechaGlobal - Loading transformation from repository [VariablesFechaGlobal] in directory [/BU/Stock_Inventario_Hes]
+2024/02/29 14:00:13 - VariablesFechaGlobal - Dispatching started for transformation [VariablesFechaGlobal]
+2024/02/29 14:00:13 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 14:00:13 - Obtener Fecha De Proceso.0 - Finished reading query, closing connection.
+2024/02/29 14:00:13 - Set Variables.0 - Setting environment variables...
+2024/02/29 14:00:13 - Set Variables.0 - Set variable Ano to value [2024]
+2024/02/29 14:00:13 - Write to log.0 - 
+2024/02/29 14:00:13 - Write to log.0 - ------------> Linenr 1------------------------------
+2024/02/29 14:00:13 - Write to log.0 - Executado FechaDesde
+2024/02/29 14:00:13 - Write to log.0 - 
+2024/02/29 14:00:13 - Write to log.0 - Ano = 2024
+2024/02/29 14:00:13 - Write to log.0 - 
+2024/02/29 14:00:13 - Write to log.0 - ====================
+2024/02/29 14:00:13 - Set Variables.0 - Finished after 1 rows.
+2024/02/29 14:00:13 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 14:00:13 - Obtener Fecha De Proceso.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/29 14:00:13 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/29 14:00:13 - Stock_Inventario_Hes - Starting entry [MARD_HES]
+2024/02/29 14:00:13 - MARD_HES - Loading transformation from repository [MARD_HES] in directory [/BU/Stock_Inventario_Hes]
+2024/02/29 14:00:15 - MARD_HES - Dispatching started for transformation [MARD_HES]
+2024/02/29 14:00:15 - Insertar MARD.0 - Connected to database [BU_STGCCENTER] (commit=0)
+2024/02/29 14:00:16 - TABLA MATERIALES(MARD).0 - Finished reading query, closing connection.
+2024/02/29 14:00:16 - TABLA MATERIALES(MARD).0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+Singlevalue Name: DELIMITER, Value: ;
+Singlevalue Name: QUERY_TABLE, Value: MARD
+Singlevalue Name: ROWCOUNT, Value: 2147483647
+Singlevalue Name: ROWSKIPS, Value: 0
+Table: FIELDS, Name: FIELDNAME, Row: 0, Value: MANDT
+Table: FIELDS, Name: FIELDNAME, Row: 1, Value: MATNR
+Table: FIELDS, Name: FIELDNAME, Row: 2, Value: WERKS
+Table: FIELDS, Name: FIELDNAME, Row: 3, Value: LGORT
+Table: FIELDS, Name: FIELDNAME, Row: 4, Value: PSTAT
+Table: FIELDS, Name: FIELDNAME, Row: 5, Value: LVORM
+Table: FIELDS, Name: FIELDNAME, Row: 6, Value: LFGJA
+Table: FIELDS, Name: FIELDNAME, Row: 7, Value: LFMON
+Table: FIELDS, Name: FIELDNAME, Row: 8, Value: SPERR
+Table: FIELDS, Name: FIELDNAME, Row: 9, Value: LABST
+Table: FIELDS, Name: FIELDNAME, Row: 10, Value: UMLME
+Table: FIELDS, Name: FIELDNAME, Row: 11, Value: INSME
+Table: FIELDS, Name: FIELDNAME, Row: 12, Value: EINME
+Table: FIELDS, Name: FIELDNAME, Row: 13, Value: SPEME
+Table: FIELDS, Name: FIELDNAME, Row: 14, Value: RETME
+Table: FIELDS, Name: FIELDNAME, Row: 15, Value: VMLAB
+Table: FIELDS, Name: FIELDNAME, Row: 16, Value: VMUML
+Table: FIELDS, Name: FIELDNAME, Row: 17, Value: VMINS
+Table: FIELDS, Name: FIELDNAME, Row: 18, Value: VMEIN
+Table: FIELDS, Name: FIELDNAME, Row: 19, Value: VMSPE
+Table: FIELDS, Name: FIELDNAME, Row: 20, Value: VMRET
+Table: FIELDS, Name: FIELDNAME, Row: 21, Value: KZILL
+Table: FIELDS, Name: FIELDNAME, Row: 22, Value: KZILQ
+Table: FIELDS, Name: FIELDNAME, Row: 23, Value: KZILE
+Table: FIELDS, Name: FIELDNAME, Row: 24, Value: KZILS
+Table: FIELDS, Name: FIELDNAME, Row: 25, Value: KZVLL
+Table: FIELDS, Name: FIELDNAME, Row: 26, Value: KZVLQ
+Table: FIELDS, Name: FIELDNAME, Row: 27, Value: KZVLE
+Table: OPTIONS, Name: TEXT, Row: 0, Value: LFGJA >=  '2024 '  AND  LABST > 0  
+2024/02/29 14:00:49 - Split Fields 2 4 2.0 - linenr 50000
+2024/02/29 14:00:52 - Insertar MARD.0 - linenr 50000
+2024/02/29 14:00:55 - RFC_READ_MKPF.0 - Finished processing (I=0, O=0, R=1, W=101607, U=0, E=0)
+2024/02/29 14:00:56 - Split Fields 2 4 2.0 - linenr 100000
+2024/02/29 14:00:56 - Split Fields 2 4 2.0 - Finished processing (I=0, O=0, R=101607, W=101607, U=0, E=0)
+2024/02/29 14:00:58 - Value Mapper.0 - Finished processing (I=0, O=0, R=101607, W=101607, U=0, E=0)
+2024/02/29 14:00:59 - Insertar MARD.0 - linenr 100000
+2024/02/29 14:00:59 - Insertar MARD.0 - Finished processing (I=0, O=101607, R=101607, W=101607, U=0, E=0)
+2024/02/29 14:00:59 - Stock_Inventario_Hes - Starting entry [Update Makt]
+2024/02/29 14:01:00 - Stock_Inventario_Hes - Starting entry [Eliminar Transacciones]
+2024/02/29 14:01:00 - Stock_Inventario_Hes - Starting entry [STG_DW_STOCK]
+2024/02/29 14:01:00 - STG_DW_STOCK - Loading transformation from repository [STG_DW_STOCK] in directory [/BU/Stock_Inventario_Hes]
+2024/02/29 14:01:01 - STG_DW_STOCK - Dispatching started for transformation [STG_DW_STOCK]
+2024/02/29 14:01:01 - FactMovimiento_DWIBSBI.0 - Connected to database [BUCDWCCENTER] (commit=1000)
+2024/02/29 14:01:27 - Cargar los Tiempos.0 - Finished reading query, closing connection.
+2024/02/29 14:01:27 - Cargar los Tiempos.0 - Finished processing (I=25772, O=0, R=0, W=25772, U=0, E=0)
+2024/02/29 14:01:32 - FactMovimiento_DWIBSBI.0 - Finished processing (I=0, O=25772, R=25772, W=25772, U=0, E=0)
+2024/02/29 14:01:32 - Stock_Inventario_Hes - Starting entry [UpdateProceso]
+2024/02/29 14:01:32 - Stock_Inventario_Hes - Starting entry [ Descarga Stock Inventario Completado]
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Starting entry [Success]
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Finished job entry [Success] (result=[true])
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Finished job entry [ Descarga Stock Inventario Completado] (result=[true])
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Finished job entry [UpdateProceso] (result=[true])
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Finished job entry [STG_DW_STOCK] (result=[true])
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Finished job entry [Eliminar Transacciones] (result=[true])
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Finished job entry [Update Makt] (result=[true])
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Finished job entry [MARD_HES] (result=[true])
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Finished job entry [VariablesFechaGlobal] (result=[true])
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Finished job entry [UpdateFechaCorrida] (result=[true])
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Finished job entry [Set variables CAC] (result=[true])
+2024/02/29 14:01:33 - Stock_Inventario_Hes - Job execution finished
+2024/02/29 14:01:33 - Kitchen - Finished!
+2024/02/29 14:01:33 - Kitchen - Start=2024/02/29 14:00:05.690, Stop=2024/02/29 14:01:33.592
+2024/02/29 14:01:33 - Kitchen - Processing ended after 1 minutes and 27 seconds (87 seconds total).
